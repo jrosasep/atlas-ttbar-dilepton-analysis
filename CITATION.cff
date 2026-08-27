@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If you use this educational reproduction, please cite this repository and the ATLAS publication and datasets listed in README.md."
-title: "ATLAS Run-2 top-antitop entanglement: reproducible study"
+message: "Private AI-assisted working draft. Do not cite as a validated scientific analysis. Consult README.md and AI_ASSISTANCE.md."
+title: "Draft study of ATLAS Run-2 top-antitop entanglement"
 type: software
 authors:
   - family-names: "Rosas"
@@ -8,3 +8,4 @@ authors:
 version: 0.1.0
 date-released: 2026-08-27
 license: MIT
+abstract: "Unreviewed working draft built with substantial GPT-5.6 Work (Codex) assistance; it separates published-number checks, toy studies, an Open Data simulation baseline, and an unvalidated reconstruction prototype."

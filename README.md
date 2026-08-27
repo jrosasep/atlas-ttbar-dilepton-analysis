@@ -1,53 +1,173 @@
-# ATLAS Run-2 top-antitop entanglement
+# Borrador: entrelazamiento cuántico en pares top-antitop de ATLAS
+
+> [!CAUTION]
+> **Repositorio privado, no revisado por su propietario.** Este proyecto fue
+> construido con asistencia sustancial de **GPT-5.6 Work (Codex)** y José
+> Ignacio Rosas todavía no ha revisado ni validado el código, las decisiones
+> físicas o las conclusiones. No debe presentarse como un análisis científico
+> propio terminado, incluirse todavía en un CV ni citarse como una reproducción
+> validada. Véanse [AI_ASSISTANCE.md](AI_ASSISTANCE.md) y
+> [REVIEW_CHECKLIST.md](REVIEW_CHECKLIST.md).
 
 [![tests](https://github.com/jrosasep/atlas-ttbar-entanglement-run2/actions/workflows/tests.yml/badge.svg)](https://github.com/jrosasep/atlas-ttbar-entanglement-run2/actions/workflows/tests.yml)
 
-A transparent, reproducible study of the entanglement marker measured by the
-ATLAS Collaboration in dileptonic top-antitop events at 13 TeV. The project
-has three deliberately separate layers:
+## ¿Cuál es la pregunta física?
 
-1. a **numerical reproduction** of the published Run-2 result and its quoted
-   uncertainty budget;
-2. a **toy Monte Carlo** implementation of the angular distribution and the
-   estimator used by ATLAS, including closure tests;
-3. an **ATLAS Open Data extension** for studying what can and cannot be
-   reconstructed with the public 2015-2016 samples.
+El artículo de ATLAS estudia si los espines del quark top y del antiquark top
+producidos en el LHC muestran entrelazamiento cuántico. En el canal dileptónico,
+cada top decae finalmente en un leptón cargado, un neutrino y un quark b. Las
+direcciones de los dos leptones conservan información sobre los espines de sus
+progenitores.
 
-This repository does **not** claim to reproduce the full ATLAS measurement.
-The publication uses 140 fb^-1 collected in 2015-2018, detector calibrations,
-background estimates, systematic variations, and simulation-derived
-calibration curves that are not all public. The paper states that derived data
-and analysis configuration are available from ATLAS upon request.
-
-## Physics target
-
-ATLAS uses the angle between the charged leptons in the rest frames of their
-parent top quarks:
+ATLAS construye el ángulo `phi` entre las direcciones de los leptones, cada una
+medida en el sistema de reposo de su top progenitor, y define
 
 ```text
 D = -3 <cos(phi)>
 (1/sigma) d sigma / d cos(phi) = (1/2) [1 - D cos(phi)].
 ```
 
-At parton level, `D < -1/3` is a sufficient entanglement condition. Because
-the published result is fiducial and particle-level, ATLAS first maps this
-parton-level boundary to particle level. For Powheg+Pythia the paper quotes
-`D_limit = -0.322 +/- 0.009`; it is therefore incorrect to compare the measured
-particle-level number directly with `-1/3` without this mapping.
+En el nivel partónico, `D < -1/3` es una condición suficiente de
+entrelazamiento. El resultado publicado es fiducial y a nivel de partículas,
+por lo que ATLAS traslada esa frontera mediante simulación. Para
+Powheg+Pythia, la frontera citada es `D_limit = -0.322 +/- 0.009`.
 
-The published signal-region result is
+Este repositorio pregunta algo más modesto: **¿qué partes públicas del resultado
+se pueden comprobar numéricamente, qué enseña un modelo sintético del estimador
+y hasta dónde se puede llegar con una muestra pública simplificada de ATLAS?**
+
+## ¿Qué datos se usan realmente?
+
+El proyecto separa cuatro capas que no deben confundirse:
+
+| Capa | Entrada real | Qué hace el código | Qué no es |
+|---|---|---|---|
+| Resultado publicado | Números y tablas del artículo de ATLAS | Transcribe regiones, combina incertidumbres y dibuja los valores de `D` | No vuelve a analizar los 140 fb^-1 de datos de colisiones |
+| Monte Carlo pedagógico | Eventos sintéticos generados desde la distribución angular analítica | Comprueba el estimador `D=-3<cos(phi)>`, su sesgo estadístico y una reponderación | No es simulación del detector ATLAS ni un generador completo de eventos |
+| Línea base de Open Data | Archivo ROOT oficial de **simulación Monte Carlo** `ttbar_nonallhad_2J2LMET30.root`, 2015-2016 | Selecciona eventos e-mu y grafica observables de laboratorio | En la ejecución incluida no son datos reales de colisiones y no se mide `D` |
+| Reconstrucción prototipo | La misma simulación pública y un solver numérico escrito para este proyecto | Intenta reconstruir los dos neutrinos y un proxy detector-level de `cos(phi)` | No reproduce el método Ellipse de ATLAS, no está calibrado y no constituye una medición física |
+
+El archivo ROOT procesado tiene **1,388,001 eventos y 118 ramas**. La copia
+local pesa aproximadamente 700 MB y no se incluye en Git. Proviene del registro
+[ATLAS 2015+2016 2J2LMET30 Open Data](https://opendata.cern.ch/record/atlas-93913).
+La muestra nominal utilizada es simulación `ttbar` Powheg+Pythia. Contiene
+leptones, jets, energía transversal faltante y pesos, pero no entrega
+directamente los dos tops progenitores ni los dos neutrinos con su historial de
+decaimiento.
+
+## ¿Qué hace cada resultado?
+
+### 1. Reproducción aritmética de cifras publicadas
+
+`scripts/reproduce_published_result.py` lee
+`config/published_atlas.yaml`, vuelve a combinar las componentes sistemáticas
+por cuadratura y grafica las regiones de masa publicadas.
+
+En la región señal `340 < m_ttbar < 380 GeV`, el artículo informa:
 
 ```text
-340 < m_ttbar < 380 GeV
 D_observed = -0.537 +/- 0.002 (stat.) +/- 0.019 (syst.)
 D_expected = -0.470 +/- 0.002 (stat.) +/- 0.017 (syst.)
 ```
 
-![Published ATLAS particle-level values](results/figures/published_regions.png)
+![Valores de ATLAS transcritos](results/figures/published_regions.png)
 
-## Reproduce the current results
+El programa también calcula, como control elemental, la distancia gaussiana
+entre el valor y la frontera plegada, combinando las incertidumbres indicadas:
 
-On Windows PowerShell:
+```text
+z_simple = (D_limit - D) /
+           sqrt(sigma_stat^2 + sigma_syst^2 + sigma_limit^2)
+```
+
+Da aproximadamente 10.18 para el observado y 7.65 para el esperado. **Este
+cálculo no reproduce la significancia oficial de ATLAS**: ignora correlaciones,
+nuisance parameters y la construcción estadística completa del artículo. Solo
+sirve para comprobar escala y signos.
+
+### 2. Monte Carlo sintético del estimador
+
+`scripts/run_toy_closure.py` genera números `cos(phi)` desde la densidad
+analítica `(1-D cos(phi))/2`. Luego estima `D` usando el promedio de la
+muestra. Las pruebas de cierre preguntan si al inyectar un valor conocido el
+estimador lo recupera dentro de sus fluctuaciones estadísticas.
+
+![Cierre del estimador en muestras sintéticas](results/figures/toy_closure.png)
+
+También se prueba una reponderación sintética desde `D=-0.470` hasta
+`D=-0.537`. Esto ilustra la dependencia angular del modelo de una dimensión;
+no transforma una simulación pública en el análisis completo de ATLAS.
+
+### 3. Selección básica de la muestra pública
+
+`scripts/analyse_open_data_baseline.py` aplica una selección e-mu de cargas
+opuestas, al menos dos jets y al menos un b-jet identificado. El flujo incluido
+es:
+
+| Etapa | Eventos |
+|---|---:|
+| Entrada | 1,388,001 |
+| Exactamente un electrón y un muón | 305,583 |
+| Carga opuesta | 303,699 |
+| Al menos dos jets | 261,230 |
+| Al menos un b-tag | 232,761 |
+
+El 16.77% de los eventos de entrada pasa toda la selección. Las distribuciones
+de separación azimutal, ángulo de apertura e invariante dileptónico son
+**controles en el laboratorio**, no el observable `D`, porque para formar
+`phi` hay que reconstruir los dos sistemas de reposo de los tops.
+
+![Controles de la selección e-mu](results/figures/open_data_ttbar_baseline.png)
+
+### 4. Prototipo de reconstrucción de neutrinos
+
+`scripts/reconstruct_open_data_proxy.py` intenta resolver simultáneamente las
+dos masas del W, las dos masas del top y el momento transversal faltante,
+probando las asignaciones leptón-jet. De 500 eventos seleccionados, encuentra
+una solución numérica en 217 (43.4%). El número
+`D_detector_proxy = -0.452 +/- 0.240` de esa prueba pequeña se conserva como
+diagnóstico de desarrollo, **no como resultado físico**.
+
+![Diagnóstico del solver numérico](results/figures/reconstruction_proxy.png)
+
+La eficiencia es baja y la validación disponible es insuficiente. Antes de
+interpretar ese proxy habría que contrastar el solver con verdad de generador,
+estudiar sesgos, backgrounds y sistemáticas, reproducir o validar el método
+Ellipse/Neutrino Weighting y obtener la calibración detector-a-partícula usada
+por ATLAS.
+
+## Qué se puede y qué no se puede afirmar
+
+Por ahora sí se puede afirmar que el repositorio:
+
+- conserva una transcripción reproducible de cifras públicas del artículo;
+- implementa y prueba el estimador en un modelo angular sintético;
+- documenta y procesa una muestra oficial de simulación pública de ATLAS;
+- produce una selección e-mu y controles de laboratorio reproducibles;
+- contiene un primer solver numérico cuya falta de validación está explícita.
+
+Todavía **no** se puede afirmar que:
+
+- José haya realizado o comprendido personalmente todas las decisiones del
+  análisis;
+- se haya reproducido la medición de ATLAS con datos Run 2;
+- el proxy reconstruido mida entrelazamiento;
+- exista un resultado nuevo o publicable;
+- el trabajo esté listo para un CV, una postulación o una presentación.
+
+## Asistencia de inteligencia artificial
+
+La investigación de fuentes, la estructura del proyecto, gran parte del
+código, las pruebas, la documentación, las figuras y el prototipo de
+reconstrucción fueron generados con asistencia sustancial de
+**GPT-5.6 Work (Codex)** a partir de la idea y las indicaciones de José Ignacio
+Rosas. El propietario autorizó guardar el borrador, pero indicó expresamente
+que aún no entiende ni ha revisado el análisis. El detalle y la política para
+futuras versiones están en [AI_ASSISTANCE.md](AI_ASSISTANCE.md).
+
+## Cómo reproducirlo
+
+En Windows PowerShell:
 
 ```powershell
 py -m venv .venv
@@ -57,93 +177,31 @@ py -m venv .venv
 .venv\Scripts\python -m pytest
 ```
 
-The scripts write machine-readable summaries and figures under `results/`.
-All random studies use explicit seeds.
+Los scripts escriben resúmenes legibles por máquina y figuras bajo
+`results/`. Las pruebas aleatorias usan semillas explícitas. El archivo ROOT
+se descarga por separado y se coloca en `data/raw/`; véase
+[data/README.md](data/README.md).
 
-![Moment-estimator closure](results/figures/toy_closure.png)
+## Presentaciones y relación con el portafolio
 
-## Open-data status
+Este repositorio **no incluye todavía las presentaciones de ATLAS/LHC**, porque
+José no ha proporcionado los archivos originales ni ha revisado cómo se
+relacionan con este análisis. Si se incorporan después, conviene conservar las
+presentaciones como evidencia histórica separada y enlazar este trabajo como
+un borrador posterior, con fechas y autoría claras, sin insinuar que la
+reproducción existía cuando se hicieron las exposiciones.
 
-The most directly useful compact public sample identified so far is the 2025
-ATLAS 2015+2016 `2J2LMET30` beta release: at least two jets, at least two tight
-leptons, and missing transverse momentum above 30 GeV. It is enriched in
-dileptonic top events and includes a nominal Powheg+Pythia `ttbar` simulation.
-
-The raw ROOT files are intentionally excluded from Git. After downloading a
-sample into `data/raw/`, inspect it with:
-
-```powershell
-.venv\Scripts\python scripts/inspect_open_data.py data/raw/sample.root
-```
-
-Whether the exact ATLAS observable can be formed depends on the available
-truth history or on implementing a two-neutrino top reconstruction. The
-published analysis primarily uses the analytic Ellipse method, falls back to
-Neutrino Weighting, and then applies detector-to-particle and
-parton-to-particle calibration curves. A detector-level proxy is not labelled
-as the published measurement.
-
-The inspected nominal `ttbar` file has 1,388,001 events and 118 branches. It
-contains reconstructed lepton and jet four-vectors, missing transverse
-momentum, event weights, and simplified truth-object collections. It does not
-contain parent-top four-vectors, decay ancestry, or the two neutrinos
-separately. The exact `cos(phi)` construction therefore requires a dileptonic
-top reconstruction; it cannot be read directly from this flat ntuple.
-
-The reproducible first open-data milestone is an `e mu` cutflow plus lab-frame
-spin-correlation controls:
-
-```powershell
-.venv\Scripts\python scripts/analyse_open_data_baseline.py `
-  data/raw/ttbar_nonallhad_2J2LMET30.root
-```
-
-The resulting dilepton azimuthal separation, opening angle, and invariant mass
-are explicitly labelled as control observables, not as the ATLAS marker `D`.
-
-![Selected open-data ttbar controls](results/figures/open_data_ttbar_baseline.png)
-
-A development-only numerical solver for the two-neutrino constraints is also
-included. It tries both lepton-jet assignments, enforces the two W and two top
-mass constraints together with measured missing transverse momentum, and
-chooses the real solution with the lowest reconstructed `m_ttbar`. Run a small
-prototype sample with:
-
-```powershell
-.venv\Scripts\python scripts/reconstruct_open_data_proxy.py `
-  data/raw/ttbar_nonallhad_2J2LMET30.root --max-selected 500
-```
-
-Its `D_detector_proxy` output remains a development quantity until the solver
-is validated against generator history or the ATLAS Ellipse implementation and
-the detector-to-particle calibration is available.
-
-![Numerical dilepton reconstruction prototype](results/figures/reconstruction_proxy.png)
-
-## Scope table
-
-| Layer | Input | What is reproduced | Scientific status |
-|---|---|---|---|
-| Published numbers | ATLAS paper | Regions, `D`, uncertainty budget, folded boundary | Exact transcription and independent arithmetic checks |
-| Toy Monte Carlo | Analytic angular PDF | Estimator, statistical scaling, reweighting, closure | Pedagogical validation |
-| Open Data baseline | ATLAS 2015-2016 public ROOT files | `e mu` selection, cutflow, dilepton controls | Educational extension; not the 140 fb^-1 result |
-| Open Data reconstruction | Same ntuples plus a two-neutrino solver | Detector-level `m_ttbar` and `cos(phi)` proxy | Planned; requires closure and calibration studies |
-
-## Primary references
+## Referencias primarias
 
 - ATLAS Collaboration, *Observation of quantum entanglement with top quarks at
   the ATLAS detector*, Nature **633** (2024) 542-547,
   [arXiv:2311.07288](https://arxiv.org/abs/2311.07288),
   [DOI:10.1038/s41586-024-07824-z](https://doi.org/10.1038/s41586-024-07824-z).
-- [ATLAS public auxiliary page, TOPQ-2021-24](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/TOPQ-2021-24/).
-- [ATLAS 2015+2016 `2J2LMET30` Open Data](https://opendata.cern.ch/record/atlas-93913),
+- [Página auxiliar pública de ATLAS, TOPQ-2021-24](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/TOPQ-2021-24/).
+- [ATLAS 2015+2016 2J2LMET30 Open Data](https://opendata.cern.ch/record/atlas-93913),
   DOI:10.7483/OPENDATA.ATLAS.NNF8.76IX.
-- [ATLAS 2016 two-lepton educational release](https://opendata.cern.ch/record/atlas-15003),
-  DOI:10.7483/OPENDATA.ATLAS.GQ1W.I9VI.
+- [Conversor PhysLiteToOpenData](https://doi.org/10.5281/zenodo.15791091).
 
-## Authorship and acknowledgements
-
-Original analysis code and documentation: Jose Ignacio Rosas. The collision
-data, simulated samples, published values, and experiment-specific methods are
-the work of the ATLAS Collaboration. This independent educational project is
-not reviewed or endorsed by ATLAS or CERN.
+Los datos, las muestras simuladas, los valores publicados y los métodos propios
+del experimento pertenecen a la Colaboración ATLAS. Este borrador independiente
+no está revisado ni respaldado por ATLAS o CERN.
