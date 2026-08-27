@@ -1,0 +1,26 @@
+{
+  "input_file": "work\\atlas-ttbar-entanglement-run2\\data\\raw\\ttbar_nonallhad_2J2LMET30.root",
+  "tree": "analysis",
+  "events_processed": 1388001,
+  "selection": {
+    "leptons": "exactly one tight+isolated electron and one tight+isolated muon, pT >= 25 GeV, ATLAS eta acceptance, opposite charge",
+    "jets": "at least two jets with pT >= 25 GeV and |eta| < 2.5",
+    "b_tag": "at least one jet with DL1dv01 continuous quantile >= 2 (85% working-point bin)",
+    "trigger": "not emulated in this baseline"
+  },
+  "cutflow_unweighted": {
+    "input": 1388001,
+    "exactly_one_selected_e_and_mu": 305583,
+    "opposite_sign": 303699,
+    "at_least_two_jets": 261230,
+    "at_least_one_btag_85": 232761
+  },
+  "selected_fraction": 0.16769512413895957,
+  "control_observables": {
+    "mean_abs_delta_phi": 1.8675520931206906,
+    "mean_cos_opening_lab": -0.0009254459568456524,
+    "mean_m_emu_gev": 131.55866328582462,
+    "mean_met_gev": 87.71144004168482
+  },
+  "physics_status": "These are reconstructed lab-frame controls in simulated ttbar events. They are not D and are not corrected to particle level."
+}

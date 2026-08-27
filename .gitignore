@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+
+# Large ATLAS files are downloaded locally and never committed.
+data/raw/
+*.root
+
+# PNG summaries and machine-readable results are tracked for the portfolio.
+# Vector copies can be regenerated locally.
+results/figures/*.pdf

@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ttbar-entanglement-run2"
+version = "0.1.0"
+description = "Reproducible study of the ATLAS Run-2 top-antitop entanglement observable"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+  {name = "Jose Ignacio Rosas"},
+]
+dependencies = [
+  "awkward>=2.8",
+  "matplotlib>=3.10",
+  "numpy>=2.2",
+  "pyyaml>=6.0",
+  "scipy>=1.15",
+  "uproot>=5.6",
+  "vector>=1.6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+pythonpath = ["src", "."]

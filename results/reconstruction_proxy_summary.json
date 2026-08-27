@@ -1,0 +1,26 @@
+{
+  "input_file": "work\\atlas-ttbar-entanglement-run2\\data\\raw\\ttbar_nonallhad_2J2LMET30.root",
+  "selected_events_attempted": 500,
+  "solutions": 217,
+  "failures": 283,
+  "solution_efficiency": 0.434,
+  "median_maximum_scaled_residual": 1.956149075016758e-15,
+  "regions": {
+    "signal": {
+      "events": 32,
+      "d_detector_proxy": -0.4516541660057156,
+      "statistical_uncertainty_proxy": 0.24020840495216828
+    },
+    "validation_mid": {
+      "events": 90,
+      "d_detector_proxy": 0.062448939892247216,
+      "statistical_uncertainty_proxy": 0.188228321419381
+    },
+    "validation_high": {
+      "events": 95,
+      "d_detector_proxy": -0.17436713337754464,
+      "statistical_uncertainty_proxy": 0.18288716202227723
+    }
+  },
+  "status": "Development proxy from a numerical on-shell constraint solver. It is not the ATLAS Ellipse implementation, has no background subtraction, and has no detector-to-particle calibration."
+}

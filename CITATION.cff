@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this educational reproduction, please cite this repository and the ATLAS publication and datasets listed in README.md."
+title: "ATLAS Run-2 top-antitop entanglement: reproducible study"
+type: software
+authors:
+  - family-names: "Rosas"
+    given-names: "Jose Ignacio"
+version: 0.1.0
+date-released: 2026-08-27
+license: MIT
