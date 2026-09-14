@@ -1,0 +1,2246 @@
+[
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_data15_periodD.2J2LMET30.root",
+    "dsid": null,
+    "entries": 10085,
+    "max_residual_float64_gev": 3.9499734498349426e-05,
+    "max_interval_gap_gev": 6.068191623853636e-06,
+    "nonoverlapping_single_rounding_intervals": 520,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 40,
+        "met": 40.94963455200195,
+        "mx": 40.84819793701172,
+        "my": 2.8804452419281006,
+        "residual_gev": 4.034828364751775e-06,
+        "interval_gap_gev": 2.1647029058158296e-07
+      },
+      {
+        "entry": 57,
+        "met": 34.97533416748047,
+        "mx": 19.724098205566406,
+        "my": 28.883113861083984,
+        "residual_gev": 4.520446054812055e-06,
+        "interval_gap_gev": 1.2877221280405138e-06
+      },
+      {
+        "entry": 68,
+        "met": 55.80488967895508,
+        "mx": -54.3825798034668,
+        "my": -12.518835067749023,
+        "residual_gev": 4.528757003186001e-06,
+        "interval_gap_gev": 6.557029124110159e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_410470.PhPy8EG_A14_ttbar_hdamp258p75_nonallhad.2J2LMET30.root",
+    "dsid": 410470,
+    "entries": 1388001,
+    "max_residual_float64_gev": 7.581179431781493e-05,
+    "max_interval_gap_gev": 2.233454409861224e-05,
+    "nonoverlapping_single_rounding_intervals": 74546,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 7,
+        "met": 45.07102584838867,
+        "mx": 26.6309871673584,
+        "my": -36.361907958984375,
+        "residual_gev": 5.068661124596474e-06,
+        "interval_gap_gev": 1.0590281220856923e-06
+      },
+      {
+        "entry": 11,
+        "met": 57.84827423095703,
+        "mx": -54.63090133666992,
+        "my": 19.023326873779297,
+        "residual_gev": 4.194562535531077e-06,
+        "interval_gap_gev": 1.723324558611239e-07
+      },
+      {
+        "entry": 24,
+        "met": 114.47506713867188,
+        "mx": 1.4870458841323853,
+        "my": -114.46541595458984,
+        "residual_gev": 7.681652164137631e-06,
+        "interval_gap_gev": 5.180521611691802e-08
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700605.Sh_2212_vvvv.2J2LMET30.root",
+    "dsid": 700605,
+    "entries": 1,
+    "max_residual_float64_gev": 8.485520751833064e-06,
+    "max_interval_gap_gev": 7.39122981485707e-07,
+    "nonoverlapping_single_rounding_intervals": 1,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 0,
+        "met": 118.36495208740234,
+        "mx": -114.4100341796875,
+        "my": 30.341522216796875,
+        "residual_gev": 8.485520751833064e-06,
+        "interval_gap_gev": 7.39122981485707e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700604.Sh_2212_lvvv.2J2LMET30.root",
+    "dsid": 700604,
+    "entries": 155,
+    "max_residual_float64_gev": 2.127160564668884e-05,
+    "max_interval_gap_gev": 2.9246149040318414e-06,
+    "nonoverlapping_single_rounding_intervals": 7,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 0,
+        "met": 107.68533325195312,
+        "mx": -49.411224365234375,
+        "my": -95.68000793457031,
+        "residual_gev": 9.351536647272951e-06,
+        "interval_gap_gev": 1.2722413913479613e-06
+      },
+      {
+        "entry": 16,
+        "met": 84.97998809814453,
+        "mx": 83.3317642211914,
+        "my": -16.655738830566406,
+        "residual_gev": 1.0666938578651752e-05,
+        "interval_gap_gev": 2.9246149040318414e-06
+      },
+      {
+        "entry": 54,
+        "met": 115.44561767578125,
+        "mx": 110.93440246582031,
+        "my": 31.95695686340332,
+        "residual_gev": 8.220860792107487e-06,
+        "interval_gap_gev": 4.765408050388942e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_410645.PowhegPythia8EvtGen_A14_singletop_schan_lept_antitop.2J2LMET30.root",
+    "dsid": 410645,
+    "entries": 321,
+    "max_residual_float64_gev": 1.196518522306178e-05,
+    "max_interval_gap_gev": 3.92224269774033e-06,
+    "nonoverlapping_single_rounding_intervals": 14,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 46,
+        "met": 50.211673736572266,
+        "mx": -42.468814849853516,
+        "my": -26.788270950317383,
+        "residual_gev": 4.821281699207702e-06,
+        "interval_gap_gev": 7.919139406453723e-07
+      },
+      {
+        "entry": 72,
+        "met": 84.56072235107422,
+        "mx": 82.20777893066406,
+        "my": 19.808975219726562,
+        "residual_gev": 7.973955362672314e-06,
+        "interval_gap_gev": 2.2730101534307323e-07
+      },
+      {
+        "entry": 84,
+        "met": 44.05783462524414,
+        "mx": 44.05265808105469,
+        "my": 0.6756482124328613,
+        "residual_gev": 4.456050760381913e-06,
+        "interval_gap_gev": 6.411207635892424e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_410644.PowhegPythia8EvtGen_A14_singletop_schan_lept_top.2J2LMET30.root",
+    "dsid": 410644,
+    "entries": 457,
+    "max_residual_float64_gev": 1.612390940408659e-05,
+    "max_interval_gap_gev": 2.7611945654371084e-06,
+    "nonoverlapping_single_rounding_intervals": 22,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 19,
+        "met": 49.702430725097656,
+        "mx": -28.77850341796875,
+        "my": 40.523189544677734,
+        "residual_gev": 4.7294591922764084e-06,
+        "interval_gap_gev": 7.148257026301508e-07
+      },
+      {
+        "entry": 139,
+        "met": 45.77416229248047,
+        "mx": 28.705656051635742,
+        "my": 35.654727935791016,
+        "residual_gev": 4.150286002868597e-06,
+        "interval_gap_gev": 1.591890281815722e-07
+      },
+      {
+        "entry": 163,
+        "met": 101.80705261230469,
+        "mx": -30.727773666381836,
+        "my": -97.05916595458984,
+        "residual_gev": 8.882922656994197e-06,
+        "interval_gap_gev": 1.1435897278033735e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700348.Sh_2211_Wtaunu_H_maxHTpTV2_CFilterBVeto.2J2LMET30.root",
+    "dsid": 700348,
+    "entries": 101,
+    "max_residual_float64_gev": 8.301865398152586e-05,
+    "max_interval_gap_gev": 1.848362899181666e-05,
+    "nonoverlapping_single_rounding_intervals": 2,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 1,
+        "met": 981.8558349609375,
+        "mx": 369.8481140136719,
+        "my": -909.5345458984375,
+        "residual_gev": 8.301865398152586e-05,
+        "interval_gap_gev": 1.848362899181666e-05
+      },
+      {
+        "entry": 78,
+        "met": 406.9500732421875,
+        "mx": 398.0064392089844,
+        "my": -84.84815979003906,
+        "residual_gev": 3.224013653380098e-05,
+        "interval_gap_gev": 1.2625473573280033e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700901.Sh_2214_Ztt_maxHTpTV2_Mll10_40_BFilter.2J2LMET30.root",
+    "dsid": 700901,
+    "entries": 2341,
+    "max_residual_float64_gev": 5.7417982588958694e-05,
+    "max_interval_gap_gev": 6.742851951457851e-06,
+    "nonoverlapping_single_rounding_intervals": 132,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 32,
+        "met": 56.82937240600586,
+        "mx": -48.339263916015625,
+        "my": -29.881309509277344,
+        "residual_gev": 4.171514298434431e-06,
+        "interval_gap_gev": 1.4031896000687993e-07
+      },
+      {
+        "entry": 38,
+        "met": 61.7058219909668,
+        "mx": 50.91020584106445,
+        "my": -34.867733001708984,
+        "residual_gev": 4.8951854694223584e-06,
+        "interval_gap_gev": 3.364104017578029e-07
+      },
+      {
+        "entry": 61,
+        "met": 141.98338317871094,
+        "mx": 141.411376953125,
+        "my": -12.732163429260254,
+        "residual_gev": 1.5559902891482125e-05,
+        "interval_gap_gev": 2.890913606279355e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_410156.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttZnunu.2J2LMET30.root",
+    "dsid": 410156,
+    "entries": 2939,
+    "max_residual_float64_gev": 5.1437925435493526e-05,
+    "max_interval_gap_gev": 1.4222935647012491e-05,
+    "nonoverlapping_single_rounding_intervals": 153,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 5,
+        "met": 38.222747802734375,
+        "mx": -13.859565734863281,
+        "my": -35.621490478515625,
+        "residual_gev": 3.967813576366552e-06,
+        "interval_gap_gev": 1.1002001087945246e-07
+      },
+      {
+        "entry": 50,
+        "met": 121.44225311279297,
+        "mx": -5.6948113441467285,
+        "my": -121.30864715576172,
+        "residual_gev": 8.605346067724895e-06,
+        "interval_gap_gev": 9.689678392987844e-07
+      },
+      {
+        "entry": 89,
+        "met": 189.5525665283203,
+        "mx": 47.244014739990234,
+        "my": 183.57061767578125,
+        "residual_gev": 1.8134424351501366e-05,
+        "interval_gap_gev": 2.641018056692701e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700347.Sh_2211_Wtaunu_H_maxHTpTV2_BFilter.2J2LMET30.root",
+    "dsid": 700347,
+    "entries": 537,
+    "max_residual_float64_gev": 2.4807636805235234e-05,
+    "max_interval_gap_gev": 8.348065819063777e-06,
+    "nonoverlapping_single_rounding_intervals": 21,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 24,
+        "met": 35.54450225830078,
+        "mx": 34.02516555786133,
+        "my": 10.281052589416504,
+        "residual_gev": 4.1187221029304055e-06,
+        "interval_gap_gev": 2.4763144779171853e-07
+      },
+      {
+        "entry": 32,
+        "met": 167.5179443359375,
+        "mx": 87.53986358642578,
+        "my": -142.82516479492188,
+        "residual_gev": 1.8681914951912404e-05,
+        "interval_gap_gev": 2.5542799733102584e-06
+      },
+      {
+        "entry": 36,
+        "met": 53.40485763549805,
+        "mx": 52.34809494018555,
+        "my": 10.57148265838623,
+        "residual_gev": 4.404050756079414e-06,
+        "interval_gap_gev": 5.327059753312824e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_410081.MadGraphPythia8EvtGen_A14NNPDF23_ttbarWW.2J2LMET30.root",
+    "dsid": 410081,
+    "entries": 3404,
+    "max_residual_float64_gev": 6.119818840488733e-05,
+    "max_interval_gap_gev": 1.683535032270811e-05,
+    "nonoverlapping_single_rounding_intervals": 177,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 1,
+        "met": 153.77496337890625,
+        "mx": -151.96533203125,
+        "my": -23.52195167541504,
+        "residual_gev": 1.621786890382282e-05,
+        "interval_gap_gev": 9.0298641453046e-07
+      },
+      {
+        "entry": 20,
+        "met": 155.48324584960938,
+        "mx": -87.93441772460938,
+        "my": 128.2286376953125,
+        "residual_gev": 1.8027123729780214e-05,
+        "interval_gap_gev": 1.948266401541332e-06
+      },
+      {
+        "entry": 43,
+        "met": 78.56145477294922,
+        "mx": 78.08869934082031,
+        "my": -8.605578422546387,
+        "residual_gev": 7.836633017177519e-06,
+        "interval_gap_gev": 1.779611409347126e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_410157.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttZqq.2J2LMET30.root",
+    "dsid": 410157,
+    "entries": 4146,
+    "max_residual_float64_gev": 4.869541714924708e-05,
+    "max_interval_gap_gev": 8.543567332708335e-06,
+    "nonoverlapping_single_rounding_intervals": 199,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 32,
+        "met": 151.32736206054688,
+        "mx": 51.8332405090332,
+        "my": 142.1734161376953,
+        "residual_gev": 1.7942143870186555e-05,
+        "interval_gap_gev": 2.4915511858125683e-06
+      },
+      {
+        "entry": 37,
+        "met": 67.49542999267578,
+        "mx": -37.248111724853516,
+        "my": 56.28685760498047,
+        "residual_gev": 6.6951623551858575e-06,
+        "interval_gap_gev": 2.3726667564005766e-07
+      },
+      {
+        "entry": 38,
+        "met": 95.45659637451172,
+        "mx": 17.181705474853516,
+        "my": 93.89754486083984,
+        "residual_gev": 9.729492603582912e-06,
+        "interval_gap_gev": 1.9907449200218252e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_410659.PhPy8EG_A14_tchan_BW50_lept_antitop.2J2LMET30.root",
+    "dsid": 410659,
+    "entries": 4523,
+    "max_residual_float64_gev": 1.9866303603066626e-05,
+    "max_interval_gap_gev": 6.0984146728060296e-06,
+    "nonoverlapping_single_rounding_intervals": 246,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 2,
+        "met": 54.8409423828125,
+        "mx": 17.986019134521484,
+        "my": -51.807640075683594,
+        "residual_gev": 4.621693300066454e-06,
+        "interval_gap_gev": 5.997193426310332e-07
+      },
+      {
+        "entry": 24,
+        "met": 77.17982482910156,
+        "mx": -10.273321151733398,
+        "my": -76.4930419921875,
+        "residual_gev": 8.03353952960606e-06,
+        "interval_gap_gev": 3.7461911972513917e-07
+      },
+      {
+        "entry": 30,
+        "met": 79.56622314453125,
+        "mx": 74.10922241210938,
+        "my": -28.9587345123291,
+        "residual_gev": 8.078790216359266e-06,
+        "interval_gap_gev": 3.639277110778494e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700349.Sh_2211_Wtaunu_H_maxHTpTV2_CVetoBVeto.2J2LMET30.root",
+    "dsid": 700349,
+    "entries": 305,
+    "max_residual_float64_gev": 0.00013667078928847332,
+    "max_interval_gap_gev": 7.912820819910849e-06,
+    "nonoverlapping_single_rounding_intervals": 19,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 20,
+        "met": 66.166748046875,
+        "mx": 39.804195404052734,
+        "my": 52.85513687133789,
+        "residual_gev": 6.939688120155552e-06,
+        "interval_gap_gev": 4.53956872092931e-07
+      },
+      {
+        "entry": 32,
+        "met": 57.85116195678711,
+        "mx": -54.16847610473633,
+        "my": 20.310897827148438,
+        "residual_gev": 4.889237857241824e-06,
+        "interval_gap_gev": 8.611338842001715e-07
+      },
+      {
+        "entry": 45,
+        "met": 163.7451934814453,
+        "mx": 152.69100952148438,
+        "my": 59.14337158203125,
+        "residual_gev": 1.709209254840971e-05,
+        "interval_gap_gev": 1.659433138456734e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_410155.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttW.2J2LMET30.root",
+    "dsid": 410155,
+    "entries": 6375,
+    "max_residual_float64_gev": 4.833566026718472e-05,
+    "max_interval_gap_gev": 1.4911114533333603e-05,
+    "nonoverlapping_single_rounding_intervals": 353,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 10,
+        "met": 196.19764709472656,
+        "mx": 121.51637268066406,
+        "my": -154.03662109375,
+        "residual_gev": 1.8496811179602446e-05,
+        "interval_gap_gev": 2.5148471252123272e-06
+      },
+      {
+        "entry": 73,
+        "met": 102.22806549072266,
+        "mx": -33.801971435546875,
+        "my": 96.47798919677734,
+        "residual_gev": 8.322531243720732e-06,
+        "interval_gap_gev": 2.7703396199285635e-07
+      },
+      {
+        "entry": 85,
+        "met": 198.85179138183594,
+        "mx": 173.83766174316406,
+        "my": -96.55314636230469,
+        "residual_gev": 1.955482954940635e-05,
+        "interval_gap_gev": 3.4035255680464616e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_410658.PhPy8EG_A14_tchan_BW50_lept_top.2J2LMET30.root",
+    "dsid": 410658,
+    "entries": 7362,
+    "max_residual_float64_gev": 4.368755008954395e-05,
+    "max_interval_gap_gev": 1.314038627242553e-05,
+    "nonoverlapping_single_rounding_intervals": 399,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 3,
+        "met": 47.33827590942383,
+        "mx": 6.296875953674316,
+        "my": -46.91761016845703,
+        "residual_gev": 4.484938450843856e-06,
+        "interval_gap_gev": 6.554766613930951e-07
+      },
+      {
+        "entry": 9,
+        "met": 81.53636932373047,
+        "mx": 81.52315521240234,
+        "my": -1.4673993587493896,
+        "residual_gev": 8.743535929056634e-06,
+        "interval_gap_gev": 1.113686522558055e-06
+      },
+      {
+        "entry": 13,
+        "met": 44.5318489074707,
+        "mx": 3.1884939670562744,
+        "my": 44.41754913330078,
+        "residual_gev": 4.517336321896437e-06,
+        "interval_gap_gev": 6.989990239958388e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_410471.PhPy8EG_A14_ttbar_hdamp258p75_allhad.2J2LMET30.root",
+    "dsid": 410471,
+    "entries": 1580,
+    "max_residual_float64_gev": 1.3480821081657268e-05,
+    "max_interval_gap_gev": 2.8139220518141883e-06,
+    "nonoverlapping_single_rounding_intervals": 88,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 28,
+        "met": 60.49649429321289,
+        "mx": -30.874351501464844,
+        "my": -52.025001525878906,
+        "residual_gev": 4.484846215291327e-06,
+        "interval_gap_gev": 4.5053330666178226e-07
+      },
+      {
+        "entry": 39,
+        "met": 49.4451904296875,
+        "mx": -48.21593475341797,
+        "my": 10.95677661895752,
+        "residual_gev": 4.665726905273004e-06,
+        "interval_gap_gev": 7.927839362764644e-07
+      },
+      {
+        "entry": 40,
+        "met": 31.851272583007812,
+        "mx": -0.17127270996570587,
+        "my": 31.850814819335938,
+        "residual_gev": 2.728929210604747e-06,
+        "interval_gap_gev": 8.215543019218785e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_345324.PowhegPythia8EvtGen_NNLOPS_NN30_ggH125_WWlvlv_EF_15_5.2J2LMET30.root",
+    "dsid": 345324,
+    "entries": 12840,
+    "max_residual_float64_gev": 3.11643320856092e-05,
+    "max_interval_gap_gev": 8.765334882809839e-06,
+    "nonoverlapping_single_rounding_intervals": 698,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 3,
+        "met": 66.80200958251953,
+        "mx": -10.132552146911621,
+        "my": -66.0290756225586,
+        "residual_gev": 7.811768341525749e-06,
+        "interval_gap_gev": 1.541845620067761e-07
+      },
+      {
+        "entry": 15,
+        "met": 61.407867431640625,
+        "mx": -9.448121070861816,
+        "my": -60.67668151855469,
+        "residual_gev": 3.984601924855724e-06,
+        "interval_gap_gev": 1.192502239177884e-07
+      },
+      {
+        "entry": 20,
+        "met": 87.45109558105469,
+        "mx": 83.90311431884766,
+        "my": -24.656845092773438,
+        "residual_gev": 8.667679821883212e-06,
+        "interval_gap_gev": 9.241625491540617e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_345948.PowhegPy8EG_NNPDF30_AZNLOCTEQ6L1_VBFH125_WWlvlv.2J2LMET30.root",
+    "dsid": 345948,
+    "entries": 15161,
+    "max_residual_float64_gev": 4.309250800815789e-05,
+    "max_interval_gap_gev": 1.2835867238436549e-05,
+    "nonoverlapping_single_rounding_intervals": 772,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 48,
+        "met": 77.35433959960938,
+        "mx": 56.59001541137695,
+        "my": -52.73767852783203,
+        "residual_gev": 8.235652529720028e-06,
+        "interval_gap_gev": 1.7252299784331626e-06
+      },
+      {
+        "entry": 49,
+        "met": 82.95401763916016,
+        "mx": 62.521202087402344,
+        "my": -54.52033615112305,
+        "residual_gev": 7.703019889504503e-06,
+        "interval_gap_gev": 1.197204767322546e-06
+      },
+      {
+        "entry": 110,
+        "met": 38.91657257080078,
+        "mx": 38.44755172729492,
+        "my": 6.023763656616211,
+        "residual_gev": 4.390871851001066e-06,
+        "interval_gap_gev": 5.622580872000071e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700344.Sh_2211_Wtaunu_L_maxHTpTV2_BFilter.2J2LMET30.root",
+    "dsid": 700344,
+    "entries": 10143,
+    "max_residual_float64_gev": 0.00011313545269331371,
+    "max_interval_gap_gev": 1.3016245191010967e-05,
+    "nonoverlapping_single_rounding_intervals": 576,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 34,
+        "met": 34.77742004394531,
+        "mx": -24.3475399017334,
+        "my": -24.83277130126953,
+        "residual_gev": 4.095396228365189e-06,
+        "interval_gap_gev": 8.394140849077303e-07
+      },
+      {
+        "entry": 84,
+        "met": 83.40184020996094,
+        "mx": 36.987552642822266,
+        "my": -74.75151824951172,
+        "residual_gev": 9.476437696775974e-06,
+        "interval_gap_gev": 1.396816188048433e-06
+      },
+      {
+        "entry": 99,
+        "met": 219.30172729492188,
+        "mx": 5.059225559234619,
+        "my": 219.24337768554688,
+        "residual_gev": 1.5566886133910884e-05,
+        "interval_gap_gev": 3.0462734912362066e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700902.Sh_2214_Ztt_maxHTpTV2_Mll10_40_CFilterBVeto.2J2LMET30.root",
+    "dsid": 700902,
+    "entries": 10677,
+    "max_residual_float64_gev": 4.819306161607528e-05,
+    "max_interval_gap_gev": 1.7577457924744522e-05,
+    "nonoverlapping_single_rounding_intervals": 574,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 18,
+        "met": 102.84989929199219,
+        "mx": 98.19507598876953,
+        "my": 30.591293334960938,
+        "residual_gev": 7.81734915733523e-06,
+        "interval_gap_gev": 7.694413284298207e-08
+      },
+      {
+        "entry": 23,
+        "met": 35.24538803100586,
+        "mx": -3.4525179862976074,
+        "my": -35.07587814331055,
+        "residual_gev": 3.822998152713808e-06,
+        "interval_gap_gev": 5.7965863220488245e-09
+      },
+      {
+        "entry": 76,
+        "met": 105.16996765136719,
+        "mx": -13.900575637817383,
+        "my": -104.2472915649414,
+        "residual_gev": 8.110199786415251e-06,
+        "interval_gap_gev": 4.5124787106942676e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_410220.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_tttautau.2J2LMET30.root",
+    "dsid": 410220,
+    "entries": 13200,
+    "max_residual_float64_gev": 7.450290831911843e-05,
+    "max_interval_gap_gev": 1.630370888960897e-05,
+    "nonoverlapping_single_rounding_intervals": 680,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 1,
+        "met": 191.77975463867188,
+        "mx": 180.2274932861328,
+        "my": -65.55545806884766,
+        "residual_gev": 1.7912344361548094e-05,
+        "interval_gap_gev": 1.8091616027504642e-06
+      },
+      {
+        "entry": 12,
+        "met": 92.91536712646484,
+        "mx": -51.42500305175781,
+        "my": 77.38692474365234,
+        "residual_gev": 8.674061362512475e-06,
+        "interval_gap_gev": 6.265544527650491e-07
+      },
+      {
+        "entry": 24,
+        "met": 100.1411361694336,
+        "mx": -95.59990692138672,
+        "my": -29.814481735229492,
+        "residual_gev": 8.132457011811312e-06,
+        "interval_gap_gev": 3.921198441503293e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700603.Sh_2212_llvv_ss.2J2LMET30.root",
+    "dsid": 700603,
+    "entries": 17518,
+    "max_residual_float64_gev": 0.00015562791213596938,
+    "max_interval_gap_gev": 2.0563224779834854e-05,
+    "nonoverlapping_single_rounding_intervals": 904,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 51,
+        "met": 50.41459655761719,
+        "mx": -42.179954528808594,
+        "my": 27.613101959228516,
+        "residual_gev": 4.143599419137445e-06,
+        "interval_gap_gev": 1.1809883915248065e-07
+      },
+      {
+        "entry": 55,
+        "met": 114.07901763916016,
+        "mx": 16.4903621673584,
+        "my": 112.880859375,
+        "residual_gev": 7.92374770242077e-06,
+        "interval_gap_gev": 1.9656258132272342e-07
+      },
+      {
+        "entry": 61,
+        "met": 192.61668395996094,
+        "mx": 147.29470825195312,
+        "my": -124.11874389648438,
+        "residual_gev": 1.7458864789432482e-05,
+        "interval_gap_gev": 1.537121477213077e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700600.Sh_2212_llll.2J2LMET30.root",
+    "dsid": 700600,
+    "entries": 16683,
+    "max_residual_float64_gev": 4.166940215100112e-05,
+    "max_interval_gap_gev": 1.1034525698505604e-05,
+    "nonoverlapping_single_rounding_intervals": 877,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 9,
+        "met": 55.05014419555664,
+        "mx": 49.475467681884766,
+        "my": -24.139097213745117,
+        "residual_gev": 4.1717941101637734e-06,
+        "interval_gap_gev": 1.320657503356415e-07
+      },
+      {
+        "entry": 13,
+        "met": 223.4710693359375,
+        "mx": -223.46766662597656,
+        "my": 1.2300184965133667,
+        "residual_gev": 1.7580323373067586e-05,
+        "interval_gap_gev": 2.321321829867884e-06
+      },
+      {
+        "entry": 32,
+        "met": 67.86831665039062,
+        "mx": -61.78641128540039,
+        "my": -28.08111000061035,
+        "residual_gev": 7.024170770364435e-06,
+        "interval_gap_gev": 1.0784578563516334e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700345.Sh_2211_Wtaunu_L_maxHTpTV2_CFilterBVeto.2J2LMET30.root",
+    "dsid": 700345,
+    "entries": 10689,
+    "max_residual_float64_gev": 6.771291259610734e-05,
+    "max_interval_gap_gev": 2.0300466815115215e-05,
+    "nonoverlapping_single_rounding_intervals": 574,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 21,
+        "met": 80.38294219970703,
+        "mx": 19.36101531982422,
+        "my": 78.01647186279297,
+        "residual_gev": 8.70489981252831e-06,
+        "interval_gap_gev": 9.581084725596156e-07
+      },
+      {
+        "entry": 27,
+        "met": 71.23644256591797,
+        "mx": 39.52128982543945,
+        "my": 59.26803207397461,
+        "residual_gev": 8.604729686112478e-06,
+        "interval_gap_gev": 2.1449585148047845e-06
+      },
+      {
+        "entry": 86,
+        "met": 190.73672485351562,
+        "mx": 17.741361618041992,
+        "my": 189.90980529785156,
+        "residual_gev": 2.1358016311978645e-05,
+        "interval_gap_gev": 6.043596897598036e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700346.Sh_2211_Wtaunu_L_maxHTpTV2_CVetoBVeto.2J2LMET30.root",
+    "dsid": 700346,
+    "entries": 10190,
+    "max_residual_float64_gev": 0.0003339196919114329,
+    "max_interval_gap_gev": 8.653278109704843e-05,
+    "nonoverlapping_single_rounding_intervals": 511,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 27,
+        "met": 112.84696197509766,
+        "mx": -47.38527297973633,
+        "my": 102.41618347167969,
+        "residual_gev": 8.441785425361559e-06,
+        "interval_gap_gev": 3.6408518155894853e-07
+      },
+      {
+        "entry": 69,
+        "met": 53.924312591552734,
+        "mx": -2.553277015686035,
+        "my": -53.863826751708984,
+        "residual_gev": 4.0113126829055545e-06,
+        "interval_gap_gev": 1.9311023180534903e-07
+      },
+      {
+        "entry": 76,
+        "met": 47.41495132446289,
+        "mx": 40.906558990478516,
+        "my": 23.975643157958984,
+        "residual_gev": 4.473041386177101e-06,
+        "interval_gap_gev": 4.379247755537108e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_data15_periodH.2J2LMET30.root",
+    "dsid": null,
+    "entries": 43417,
+    "max_residual_float64_gev": 4.389473662058663e-05,
+    "max_interval_gap_gev": 1.1608789520778373e-05,
+    "nonoverlapping_single_rounding_intervals": 2414,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 48,
+        "met": 38.84803009033203,
+        "mx": -13.196273803710938,
+        "my": -36.53803634643555,
+        "residual_gev": 3.867076323160745e-06,
+        "interval_gap_gev": 3.817966387487104e-09
+      },
+      {
+        "entry": 62,
+        "met": 43.38385009765625,
+        "mx": 43.28084945678711,
+        "my": -2.987806558609009,
+        "residual_gev": 5.398746282025968e-06,
+        "interval_gap_gev": 1.5803677868575505e-06
+      },
+      {
+        "entry": 115,
+        "met": 40.81895065307617,
+        "mx": 35.01016616821289,
+        "my": -20.987485885620117,
+        "residual_gev": 5.309951710330552e-06,
+        "interval_gap_gev": 1.2763399368509454e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700903.Sh_2214_Ztt_maxHTpTV2_Mll10_40_CVetoBVeto.2J2LMET30.root",
+    "dsid": 700903,
+    "entries": 16932,
+    "max_residual_float64_gev": 5.824902621043293e-05,
+    "max_interval_gap_gev": 1.1196215666586795e-05,
+    "nonoverlapping_single_rounding_intervals": 892,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 0,
+        "met": 138.80899047851562,
+        "mx": -3.973511219024658,
+        "my": 138.75209045410156,
+        "residual_gev": 1.599634859417165e-05,
+        "interval_gap_gev": 7.3727360927478e-07
+      },
+      {
+        "entry": 5,
+        "met": 55.40572738647461,
+        "mx": -55.382076263427734,
+        "my": -1.6185742616653442,
+        "residual_gev": 4.2715413357541365e-06,
+        "interval_gap_gev": 4.559168758078158e-07
+      },
+      {
+        "entry": 24,
+        "met": 31.648622512817383,
+        "mx": 5.588308811187744,
+        "my": -31.151344299316406,
+        "residual_gev": 2.212812503898931e-06,
+        "interval_gap_gev": 2.783501145131595e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_410218.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttee.2J2LMET30.root",
+    "dsid": 410218,
+    "entries": 28201,
+    "max_residual_float64_gev": 6.665830142082996e-05,
+    "max_interval_gap_gev": 1.4501575606118422e-05,
+    "nonoverlapping_single_rounding_intervals": 1513,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 3,
+        "met": 211.7248992919922,
+        "mx": -108.37942504882812,
+        "my": -181.8827667236328,
+        "residual_gev": 1.8006274785875576e-05,
+        "interval_gap_gev": 1.870134298087578e-06
+      },
+      {
+        "entry": 16,
+        "met": 120.79412841796875,
+        "mx": 115.58007049560547,
+        "my": -35.10650634765625,
+        "residual_gev": 8.181480595226276e-06,
+        "interval_gap_gev": 1.6241207845268946e-07
+      },
+      {
+        "entry": 33,
+        "met": 78.8757553100586,
+        "mx": -71.06798553466797,
+        "my": -34.21589660644531,
+        "residual_gev": 8.702334540089396e-06,
+        "interval_gap_gev": 6.231525162547769e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_data15_periodF.2J2LMET30.root",
+    "dsid": null,
+    "entries": 52525,
+    "max_residual_float64_gev": 2.9269102526541246e-05,
+    "max_interval_gap_gev": 9.355572046843008e-06,
+    "nonoverlapping_single_rounding_intervals": 2786,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 16,
+        "met": 30.775362014770508,
+        "mx": 25.145057678222656,
+        "my": 17.743980407714844,
+        "residual_gev": 2.2873763789732493e-06,
+        "interval_gap_gev": 4.646139473152289e-09
+      },
+      {
+        "entry": 26,
+        "met": 31.460248947143555,
+        "mx": -29.996702194213867,
+        "my": 9.483933448791504,
+        "residual_gev": 2.0283817541155713e-06,
+        "interval_gap_gev": 2.1652247994552454e-08
+      },
+      {
+        "entry": 34,
+        "met": 41.11957931518555,
+        "mx": 39.35308837890625,
+        "my": -11.922826766967773,
+        "residual_gev": 5.350063666753613e-06,
+        "interval_gap_gev": 1.4790442435241857e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700792.Sh_2214_Ztautau_maxHTpTV2_BFilter.2J2LMET30.root",
+    "dsid": 700792,
+    "entries": 35085,
+    "max_residual_float64_gev": 8.184919795439782e-05,
+    "max_interval_gap_gev": 2.3825612231576088e-05,
+    "nonoverlapping_single_rounding_intervals": 1864,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 0,
+        "met": 32.006683349609375,
+        "mx": -28.74775505065918,
+        "my": -14.071039199829102,
+        "residual_gev": 3.3497120455194818e-06,
+        "interval_gap_gev": 3.761612958896876e-07
+      },
+      {
+        "entry": 21,
+        "met": 44.92515182495117,
+        "mx": 17.611957550048828,
+        "my": 41.32902908325195,
+        "residual_gev": 4.754731527611966e-06,
+        "interval_gap_gev": 7.188440989125411e-07
+      },
+      {
+        "entry": 29,
+        "met": 270.91497802734375,
+        "mx": 228.16201782226562,
+        "my": 146.0718994140625,
+        "residual_gev": 3.533285183721091e-05,
+        "interval_gap_gev": 9.535042011066253e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_601355.PhPy8EG_tW_dyn_DR_incl_top.2J2LMET30.root",
+    "dsid": 601355,
+    "entries": 41710,
+    "max_residual_float64_gev": 5.360422449030011e-05,
+    "max_interval_gap_gev": 1.0075752612692668e-05,
+    "nonoverlapping_single_rounding_intervals": 2296,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 29,
+        "met": 99.74726104736328,
+        "mx": 98.46094512939453,
+        "my": 15.967360496520996,
+        "residual_gev": 8.869674203992872e-06,
+        "interval_gap_gev": 1.2131414877103452e-06
+      },
+      {
+        "entry": 34,
+        "met": 35.56880187988281,
+        "mx": -22.868066787719727,
+        "my": 27.243181228637695,
+        "residual_gev": 3.726669831394247e-06,
+        "interval_gap_gev": 4.7573320216542925e-07
+      },
+      {
+        "entry": 65,
+        "met": 55.77364730834961,
+        "mx": 54.881351470947266,
+        "my": -9.936676025390625,
+        "residual_gev": 4.801864747605578e-06,
+        "interval_gap_gev": 9.327287315841204e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_601352.PhPy8EG_tW_dyn_DR_incl_antitop.2J2LMET30.root",
+    "dsid": 601352,
+    "entries": 42427,
+    "max_residual_float64_gev": 4.037517038568694e-05,
+    "max_interval_gap_gev": 9.71867328303233e-06,
+    "nonoverlapping_single_rounding_intervals": 2290,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 7,
+        "met": 53.48040008544922,
+        "mx": 49.51079559326172,
+        "my": -20.219640731811523,
+        "residual_gev": 4.129535845720511e-06,
+        "interval_gap_gev": 9.585104265852351e-08
+      },
+      {
+        "entry": 14,
+        "met": 61.51796340942383,
+        "mx": -61.12185287475586,
+        "my": 6.969893455505371,
+        "residual_gev": 3.995427881875457e-06,
+        "interval_gap_gev": 1.6599958030383277e-07
+      },
+      {
+        "entry": 17,
+        "met": 97.05548858642578,
+        "mx": 90.89535522460938,
+        "my": 34.02652359008789,
+        "residual_gev": 1.053152595886786e-05,
+        "interval_gap_gev": 2.4755573519996688e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700601.Sh_2212_lllv.2J2LMET30.root",
+    "dsid": 700601,
+    "entries": 51512,
+    "max_residual_float64_gev": 7.056172023567342e-05,
+    "max_interval_gap_gev": 2.117865466289004e-05,
+    "nonoverlapping_single_rounding_intervals": 2838,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 8,
+        "met": 64.20491027832031,
+        "mx": -36.29615020751953,
+        "my": 52.9609375,
+        "residual_gev": 7.140563781149467e-06,
+        "interval_gap_gev": 6.742879321564033e-07
+      },
+      {
+        "entry": 17,
+        "met": 122.09124755859375,
+        "mx": -16.95397186279297,
+        "my": 120.90838623046875,
+        "residual_gev": 9.387923839199175e-06,
+        "interval_gap_gev": 1.6630575032650086e-06
+      },
+      {
+        "entry": 48,
+        "met": 31.555801391601562,
+        "mx": -1.8819633722305298,
+        "my": -31.499629974365234,
+        "residual_gev": 2.009295524629806e-06,
+        "interval_gap_gev": 1.0008966100372163e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_data15_periodE.2J2LMET30.root",
+    "dsid": null,
+    "entries": 79236,
+    "max_residual_float64_gev": 4.891017204045056e-05,
+    "max_interval_gap_gev": 1.8128118938420812e-05,
+    "nonoverlapping_single_rounding_intervals": 4210,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 15,
+        "met": 83.1416015625,
+        "mx": -54.37230682373047,
+        "my": -62.89814758300781,
+        "residual_gev": 7.166507572264891e-06,
+        "interval_gap_gev": 6.615126011411121e-07
+      },
+      {
+        "entry": 20,
+        "met": 36.82555389404297,
+        "mx": 10.507405281066895,
+        "my": 35.29470443725586,
+        "residual_gev": 4.174421398772665e-06,
+        "interval_gap_gev": 3.0295785791167873e-07
+      },
+      {
+        "entry": 26,
+        "met": 63.36467361450195,
+        "mx": 13.483458518981934,
+        "my": -61.91346740722656,
+        "residual_gev": 6.0148150424765845e-06,
+        "interval_gap_gev": 2.1423336917791858e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700338.Sh_2211_Wenu_maxHTpTV2_BFilter.2J2LMET30.root",
+    "dsid": 700338,
+    "entries": 48549,
+    "max_residual_float64_gev": 0.00013555983446167374,
+    "max_interval_gap_gev": 2.4581531761214137e-05,
+    "nonoverlapping_single_rounding_intervals": 2657,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 15,
+        "met": 74.64478302001953,
+        "mx": 63.637115478515625,
+        "my": 39.014869689941406,
+        "residual_gev": 7.426887478345634e-06,
+        "interval_gap_gev": 9.891918608673222e-07
+      },
+      {
+        "entry": 16,
+        "met": 80.32266235351562,
+        "mx": -39.158206939697266,
+        "my": -70.13106536865234,
+        "residual_gev": 8.79525994434971e-06,
+        "interval_gap_gev": 7.200328582257498e-07
+      },
+      {
+        "entry": 69,
+        "met": 60.68553924560547,
+        "mx": 59.74992370605469,
+        "my": 10.615169525146484,
+        "residual_gev": 4.39476207958478e-06,
+        "interval_gap_gev": 5.260625997038915e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_data16_periodA.2J2LMET30.root",
+    "dsid": null,
+    "entries": 102798,
+    "max_residual_float64_gev": 4.4776439722227224e-05,
+    "max_interval_gap_gev": 1.2463961184039363e-05,
+    "nonoverlapping_single_rounding_intervals": 5547,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 38,
+        "met": 44.92400360107422,
+        "mx": -2.4819083213806152,
+        "my": -44.85539627075195,
+        "residual_gev": 3.8283829937313385e-06,
+        "interval_gap_gev": 1.0012833229211537e-08
+      },
+      {
+        "entry": 40,
+        "met": 37.17048645019531,
+        "mx": -27.720003128051758,
+        "my": -24.76382064819336,
+        "residual_gev": 4.3525246198328205e-06,
+        "interval_gap_gev": 1.0986111789179631e-06
+      },
+      {
+        "entry": 66,
+        "met": 38.615108489990234,
+        "mx": -35.154212951660156,
+        "my": -15.978347778320312,
+        "residual_gev": 4.113909305658581e-06,
+        "interval_gap_gev": 2.7285076242833384e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700602.Sh_2212_llvv_os.2J2LMET30.root",
+    "dsid": 700602,
+    "entries": 79487,
+    "max_residual_float64_gev": 0.0001820827108076628,
+    "max_interval_gap_gev": 5.315164116836968e-05,
+    "nonoverlapping_single_rounding_intervals": 4293,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 15,
+        "met": 38.18708038330078,
+        "mx": 36.157344818115234,
+        "my": -12.28413200378418,
+        "residual_gev": 4.912417708169414e-06,
+        "interval_gap_gev": 1.045710504854469e-06
+      },
+      {
+        "entry": 27,
+        "met": 156.50633239746094,
+        "mx": 155.62451171875,
+        "my": 16.590312957763672,
+        "residual_gev": 1.5810123500159534e-05,
+        "interval_gap_gev": 4.932273895974504e-07
+      },
+      {
+        "entry": 58,
+        "met": 86.71208190917969,
+        "mx": -77.09480285644531,
+        "my": -39.69099426269531,
+        "residual_gev": 8.626184765603284e-06,
+        "interval_gap_gev": 5.468230455107914e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_410219.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttmumu.2J2LMET30.root",
+    "dsid": 410219,
+    "entries": 57632,
+    "max_residual_float64_gev": 6.925417233105691e-05,
+    "max_interval_gap_gev": 1.2614671902611008e-05,
+    "nonoverlapping_single_rounding_intervals": 3061,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 0,
+        "met": 50.275123596191406,
+        "mx": 49.240203857421875,
+        "my": 10.148439407348633,
+        "residual_gev": 4.432736481874144e-06,
+        "interval_gap_gev": 5.610489708374189e-07
+      },
+      {
+        "entry": 30,
+        "met": 231.1870574951172,
+        "mx": 119.32453918457031,
+        "my": 198.01292419433594,
+        "residual_gev": 1.7834802349625534e-05,
+        "interval_gap_gev": 1.7018800519963406e-06
+      },
+      {
+        "entry": 79,
+        "met": 103.16130065917969,
+        "mx": -31.020557403564453,
+        "my": -98.38687133789062,
+        "residual_gev": 1.2215856713737594e-05,
+        "interval_gap_gev": 4.476241073803067e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700341.Sh_2211_Wmunu_maxHTpTV2_BFilter.2J2LMET30.root",
+    "dsid": 700341,
+    "entries": 63452,
+    "max_residual_float64_gev": 0.00010288315593243169,
+    "max_interval_gap_gev": 3.8654378272440226e-05,
+    "nonoverlapping_single_rounding_intervals": 3399,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 32,
+        "met": 30.06407928466797,
+        "mx": -26.403141021728516,
+        "my": -14.377869606018066,
+        "residual_gev": 2.1119245658951513e-06,
+        "interval_gap_gev": 9.26630612241297e-08
+      },
+      {
+        "entry": 60,
+        "met": 94.92864990234375,
+        "mx": 57.57526779174805,
+        "my": -75.47539520263672,
+        "residual_gev": 9.638797905608953e-06,
+        "interval_gap_gev": 1.634301952435635e-06
+      },
+      {
+        "entry": 100,
+        "met": 140.51345825195312,
+        "mx": -137.25611877441406,
+        "my": 30.079620361328125,
+        "residual_gev": 2.2232127292909354e-05,
+        "interval_gap_gev": 6.9460468807847064e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700340.Sh_2211_Wenu_maxHTpTV2_CVetoBVeto.2J2LMET30.root",
+    "dsid": 700340,
+    "entries": 55284,
+    "max_residual_float64_gev": 0.00017061675976037805,
+    "max_interval_gap_gev": 4.1360858631378505e-05,
+    "nonoverlapping_single_rounding_intervals": 2887,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 19,
+        "met": 46.70467758178711,
+        "mx": -43.55474853515625,
+        "my": 16.86150360107422,
+        "residual_gev": 5.185443995969763e-06,
+        "interval_gap_gev": 1.155085655568655e-06
+      },
+      {
+        "entry": 46,
+        "met": 100.31387329101562,
+        "mx": -99.14926147460938,
+        "my": -15.241351127624512,
+        "residual_gev": 8.27657201796228e-06,
+        "interval_gap_gev": 6.190161769836777e-07
+      },
+      {
+        "entry": 49,
+        "met": 67.91065216064453,
+        "mx": 16.99216651916504,
+        "my": 65.75045013427734,
+        "residual_gev": 9.284324150371503e-06,
+        "interval_gap_gev": 1.5376503341713033e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700343.Sh_2211_Wmunu_maxHTpTV2_CVetoBVeto.2J2LMET30.root",
+    "dsid": 700343,
+    "entries": 56134,
+    "max_residual_float64_gev": 9.412499514382944e-05,
+    "max_interval_gap_gev": 2.949925737993908e-05,
+    "nonoverlapping_single_rounding_intervals": 3026,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 47,
+        "met": 79.62561798095703,
+        "mx": -66.531005859375,
+        "my": -43.747718811035156,
+        "residual_gev": 8.772426696168623e-06,
+        "interval_gap_gev": 7.224362832403131e-07
+      },
+      {
+        "entry": 103,
+        "met": 56.099212646484375,
+        "mx": -55.2541389465332,
+        "my": -9.700579643249512,
+        "residual_gev": 4.8433627313215766e-06,
+        "interval_gap_gev": 9.74943567655373e-07
+      },
+      {
+        "entry": 110,
+        "met": 43.944114685058594,
+        "mx": 41.675018310546875,
+        "my": -13.938350677490234,
+        "residual_gev": 5.059386239736341e-06,
+        "interval_gap_gev": 1.1919316094122223e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_data15_periodG.2J2LMET30.root",
+    "dsid": null,
+    "entries": 124601,
+    "max_residual_float64_gev": 5.4801845067231625e-05,
+    "max_interval_gap_gev": 9.405037189935683e-06,
+    "nonoverlapping_single_rounding_intervals": 6733,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 14,
+        "met": 31.338258743286133,
+        "mx": 1.7416962385177612,
+        "my": -31.289819717407227,
+        "residual_gev": 2.1910285887827285e-06,
+        "interval_gap_gev": 2.8184129874375685e-07
+      },
+      {
+        "entry": 27,
+        "met": 79.53255462646484,
+        "mx": 78.89109802246094,
+        "my": 10.080702781677246,
+        "residual_gev": 8.359153270021125e-06,
+        "interval_gap_gev": 7.000863320172357e-07
+      },
+      {
+        "entry": 65,
+        "met": 38.24259948730469,
+        "mx": -32.815834045410156,
+        "my": 19.637136459350586,
+        "residual_gev": 4.2247044191867644e-06,
+        "interval_gap_gev": 1.909658706722439e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700339.Sh_2211_Wenu_maxHTpTV2_CFilterBVeto.2J2LMET30.root",
+    "dsid": 700339,
+    "entries": 99441,
+    "max_residual_float64_gev": 0.00011616100550781994,
+    "max_interval_gap_gev": 2.7259173634774925e-05,
+    "nonoverlapping_single_rounding_intervals": 5423,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 10,
+        "met": 83.15991973876953,
+        "mx": -82.9221420288086,
+        "my": 6.2842607498168945,
+        "residual_gev": 7.94167998208195e-06,
+        "interval_gap_gev": 3.051762149652859e-07
+      },
+      {
+        "entry": 37,
+        "met": 94.14076232910156,
+        "mx": -90.91262817382812,
+        "my": -24.44133758544922,
+        "residual_gev": 9.626723297628814e-06,
+        "interval_gap_gev": 1.880538931686715e-06
+      },
+      {
+        "entry": 63,
+        "met": 199.30294799804688,
+        "mx": 125.10355377197266,
+        "my": -155.1475830078125,
+        "residual_gev": 1.6554773878851847e-05,
+        "interval_gap_gev": 5.917636940466764e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700342.Sh_2211_Wmunu_maxHTpTV2_CFilterBVeto.2J2LMET30.root",
+    "dsid": 700342,
+    "entries": 111536,
+    "max_residual_float64_gev": 0.00013068123575976642,
+    "max_interval_gap_gev": 3.1144288413997856e-05,
+    "nonoverlapping_single_rounding_intervals": 5999,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 0,
+        "met": 52.8716926574707,
+        "mx": 50.58487319946289,
+        "my": -15.38135051727295,
+        "residual_gev": 5.145713032561616e-06,
+        "interval_gap_gev": 1.2747919697631005e-06
+      },
+      {
+        "entry": 41,
+        "met": 92.62637329101562,
+        "mx": -75.59750366210938,
+        "my": -53.52255630493164,
+        "residual_gev": 8.444196396339976e-06,
+        "interval_gap_gev": 4.139856031315503e-07
+      },
+      {
+        "entry": 54,
+        "met": 335.85076904296875,
+        "mx": -194.90541076660156,
+        "my": -273.5098571777344,
+        "residual_gev": 3.2831140742928255e-05,
+        "interval_gap_gev": 7.183217007877829e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_data16_periodE.2J2LMET30.root",
+    "dsid": null,
+    "entries": 244457,
+    "max_residual_float64_gev": 5.151494895017095e-05,
+    "max_interval_gap_gev": 1.0731065373192905e-05,
+    "nonoverlapping_single_rounding_intervals": 13014,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 25,
+        "met": 79.10269165039062,
+        "mx": -58.49583053588867,
+        "my": 53.249176025390625,
+        "residual_gev": 7.0233363089755585e-06,
+        "interval_gap_gev": 5.142090344634198e-07
+      },
+      {
+        "entry": 47,
+        "met": 102.1475830078125,
+        "mx": -101.1500015258789,
+        "my": -14.241058349609375,
+        "residual_gev": 8.993185176109364e-06,
+        "interval_gap_gev": 1.3345666474151585e-06
+      },
+      {
+        "entry": 92,
+        "met": 40.74436569213867,
+        "mx": 11.818603515625,
+        "my": -38.992618560791016,
+        "residual_gev": 4.3641879798883565e-06,
+        "interval_gap_gev": 4.931799040264195e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700793.Sh_2214_Ztautau_maxHTpTV2_CFilterBVeto.2J2LMET30.root",
+    "dsid": 700793,
+    "entries": 139662,
+    "max_residual_float64_gev": 0.0003091027533628221,
+    "max_interval_gap_gev": 6.476802536781179e-05,
+    "nonoverlapping_single_rounding_intervals": 7440,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 3,
+        "met": 47.58815383911133,
+        "mx": -45.10895919799805,
+        "my": 15.1596097946167,
+        "residual_gev": 4.378855038567053e-06,
+        "interval_gap_gev": 5.116240018310236e-07
+      },
+      {
+        "entry": 13,
+        "met": 38.89508819580078,
+        "mx": 38.06148910522461,
+        "my": 8.009448051452637,
+        "residual_gev": 4.1809509454537874e-06,
+        "interval_gap_gev": 3.089397537792138e-07
+      },
+      {
+        "entry": 49,
+        "met": 72.59620666503906,
+        "mx": -49.54835891723633,
+        "my": -53.05815887451172,
+        "residual_gev": 7.76630746202045e-06,
+        "interval_gap_gev": 1.255788589560325e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_data15_periodJ.2J2LMET30.root",
+    "dsid": null,
+    "entries": 238666,
+    "max_residual_float64_gev": 4.865305800194619e-05,
+    "max_interval_gap_gev": 1.3306435675985995e-05,
+    "nonoverlapping_single_rounding_intervals": 12830,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 12,
+        "met": 32.90373611450195,
+        "mx": 16.86493492126465,
+        "my": 28.25295639038086,
+        "residual_gev": 4.187936930577507e-06,
+        "interval_gap_gev": 9.729015459924995e-07
+      },
+      {
+        "entry": 19,
+        "met": 33.93791580200195,
+        "mx": -30.84392547607422,
+        "my": 14.157477378845215,
+        "residual_gev": 3.3071808545059866e-06,
+        "interval_gap_gev": 3.3418415057440143e-07
+      },
+      {
+        "entry": 24,
+        "met": 100.72635650634766,
+        "mx": 91.67953491210938,
+        "my": -41.72126388549805,
+        "residual_gev": 1.0359056787478949e-05,
+        "interval_gap_gev": 2.2822513869869e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_data16_periodB.2J2LMET30.root",
+    "dsid": null,
+    "entries": 319593,
+    "max_residual_float64_gev": 6.45210118364048e-05,
+    "max_interval_gap_gev": 1.5521818738761795e-05,
+    "nonoverlapping_single_rounding_intervals": 16978,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 56,
+        "met": 45.7642707824707,
+        "mx": 8.372325897216797,
+        "my": -44.991912841796875,
+        "residual_gev": 4.568610641797477e-06,
+        "interval_gap_gev": 6.988684901898523e-07
+      },
+      {
+        "entry": 86,
+        "met": 40.92342758178711,
+        "mx": -29.034753799438477,
+        "my": 28.83937644958496,
+        "residual_gev": 4.433241940660082e-06,
+        "interval_gap_gev": 1.1772018382316674e-06
+      },
+      {
+        "entry": 94,
+        "met": 37.01197814941406,
+        "mx": -4.902068138122559,
+        "my": 36.685909271240234,
+        "residual_gev": 4.261380659897895e-06,
+        "interval_gap_gev": 4.319091146953724e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_data16_periodK.2J2LMET30.root",
+    "dsid": null,
+    "entries": 398211,
+    "max_residual_float64_gev": 6.843381640919688e-05,
+    "max_interval_gap_gev": 1.2990672644264123e-05,
+    "nonoverlapping_single_rounding_intervals": 21426,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 30,
+        "met": 65.6830825805664,
+        "mx": -14.646998405456543,
+        "my": 64.02916717529297,
+        "residual_gev": 1.1221804541605707e-05,
+        "interval_gap_gev": 3.5821333312924253e-06
+      },
+      {
+        "entry": 49,
+        "met": 30.524707794189453,
+        "mx": 20.071313858032227,
+        "my": 22.997825622558594,
+        "residual_gev": 2.662882302217895e-06,
+        "interval_gap_gev": 3.636116261418465e-07
+      },
+      {
+        "entry": 75,
+        "met": 53.79918670654297,
+        "mx": 43.67875289916992,
+        "my": -31.408893585205078,
+        "residual_gev": 4.081957662549485e-06,
+        "interval_gap_gev": 6.92895909537583e-08
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_data16_periodC.2J2LMET30.root",
+    "dsid": null,
+    "entries": 404793,
+    "max_residual_float64_gev": 5.886335497962136e-05,
+    "max_interval_gap_gev": 1.6989877735795744e-05,
+    "nonoverlapping_single_rounding_intervals": 21472,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 1,
+        "met": 63.18177795410156,
+        "mx": 61.611392974853516,
+        "my": 13.999027252197266,
+        "residual_gev": 4.4089596755725324e-06,
+        "interval_gap_gev": 5.360178789715064e-07
+      },
+      {
+        "entry": 78,
+        "met": 43.695411682128906,
+        "mx": -0.6332531571388245,
+        "my": 43.690818786621094,
+        "residual_gev": 3.9622507372882865e-06,
+        "interval_gap_gev": 1.4732187025856547e-07
+      },
+      {
+        "entry": 85,
+        "met": 38.25090026855469,
+        "mx": -33.01503372192383,
+        "my": -19.316795349121094,
+        "residual_gev": 4.4068942202102335e-06,
+        "interval_gap_gev": 3.716709500167781e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700794.Sh_2214_Ztautau_maxHTpTV2_CVetoBVeto.2J2LMET30.root",
+    "dsid": 700794,
+    "entries": 242997,
+    "max_residual_float64_gev": 0.00010147213015443413,
+    "max_interval_gap_gev": 3.167720751662273e-05,
+    "nonoverlapping_single_rounding_intervals": 13305,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 48,
+        "met": 58.3698844909668,
+        "mx": 55.2590217590332,
+        "my": -18.80115509033203,
+        "residual_gev": 4.2572707315002845e-06,
+        "interval_gap_gev": 2.37044737616543e-07
+      },
+      {
+        "entry": 55,
+        "met": 60.359771728515625,
+        "mx": -8.918492317199707,
+        "my": 59.697261810302734,
+        "residual_gev": 4.388197893945289e-06,
+        "interval_gap_gev": 5.239805176415757e-07
+      },
+      {
+        "entry": 61,
+        "met": 42.15229797363281,
+        "mx": 42.07442855834961,
+        "my": 2.560915946960449,
+        "residual_gev": 4.690834288112455e-06,
+        "interval_gap_gev": 8.724178925945125e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_data16_periodF.2J2LMET30.root",
+    "dsid": null,
+    "entries": 587077,
+    "max_residual_float64_gev": 7.35973002292667e-05,
+    "max_interval_gap_gev": 1.399632435550302e-05,
+    "nonoverlapping_single_rounding_intervals": 31852,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 25,
+        "met": 35.894439697265625,
+        "mx": 34.79012680053711,
+        "my": 8.835057258605957,
+        "residual_gev": 4.99213298610357e-06,
+        "interval_gap_gev": 1.1187479671548317e-06
+      },
+      {
+        "entry": 55,
+        "met": 137.6214599609375,
+        "mx": -136.82168579101562,
+        "my": -14.815129280090332,
+        "residual_gev": 1.6289243689016075e-05,
+        "interval_gap_gev": 1.0234590774871322e-06
+      },
+      {
+        "entry": 86,
+        "met": 38.15713882446289,
+        "mx": -37.40667724609375,
+        "my": -7.530473709106445,
+        "residual_gev": 3.84734852332258e-06,
+        "interval_gap_gev": 2.311161040324805e-08
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_data16_periodG.2J2LMET30.root",
+    "dsid": null,
+    "entries": 665596,
+    "max_residual_float64_gev": 5.4599865848103946e-05,
+    "max_interval_gap_gev": 1.3697734573270282e-05,
+    "nonoverlapping_single_rounding_intervals": 35513,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 24,
+        "met": 33.14674377441406,
+        "mx": -30.336870193481445,
+        "my": -13.355923652648926,
+        "residual_gev": 3.5161091744839723e-06,
+        "interval_gap_gev": 5.437962542487185e-07
+      },
+      {
+        "entry": 114,
+        "met": 34.48004913330078,
+        "mx": -8.687088012695312,
+        "my": 33.36777877807617,
+        "residual_gev": 5.372499309430623e-06,
+        "interval_gap_gev": 1.4991934165209386e-06
+      },
+      {
+        "entry": 119,
+        "met": 45.03697967529297,
+        "mx": 22.52747344970703,
+        "my": 38.99798583984375,
+        "residual_gev": 4.677479907400084e-06,
+        "interval_gap_gev": 6.415112281388247e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700320.Sh_2211_Zee_maxHTpTV2_BFilter.2J2LMET30.root",
+    "dsid": 700320,
+    "entries": 469932,
+    "max_residual_float64_gev": 0.0002622878128022421,
+    "max_interval_gap_gev": 3.406846917641815e-05,
+    "nonoverlapping_single_rounding_intervals": 25389,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 0,
+        "met": 48.200904846191406,
+        "mx": 5.587904453277588,
+        "my": -47.875911712646484,
+        "residual_gev": 3.8433351861044684e-06,
+        "interval_gap_gev": 1.3858581837666861e-08
+      },
+      {
+        "entry": 24,
+        "met": 61.23786926269531,
+        "mx": -55.11960220336914,
+        "my": 26.681577682495117,
+        "residual_gev": 4.105708640622652e-06,
+        "interval_gap_gev": 6.605484514921045e-08
+      },
+      {
+        "entry": 33,
+        "met": 31.373258590698242,
+        "mx": -30.510272979736328,
+        "my": -7.307835578918457,
+        "residual_gev": 2.174659197606843e-06,
+        "interval_gap_gev": 2.3800794224371202e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_data16_periodD.2J2LMET30.root",
+    "dsid": null,
+    "entries": 806985,
+    "max_residual_float64_gev": 6.838420927124389e-05,
+    "max_interval_gap_gev": 2.2937335870665265e-05,
+    "nonoverlapping_single_rounding_intervals": 43022,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 18,
+        "met": 38.939388275146484,
+        "mx": -38.89440155029297,
+        "my": -1.8711317777633667,
+        "residual_gev": 4.534707194636667e-06,
+        "interval_gap_gev": 7.193491171619826e-07
+      },
+      {
+        "entry": 41,
+        "met": 31.19169807434082,
+        "mx": 25.115333557128906,
+        "my": -18.49707794189453,
+        "residual_gev": 2.5116695496762986e-06,
+        "interval_gap_gev": 2.245622177099449e-07
+      },
+      {
+        "entry": 42,
+        "met": 54.705162048339844,
+        "mx": -36.93492889404297,
+        "my": -40.354244232177734,
+        "residual_gev": 6.898589468562477e-06,
+        "interval_gap_gev": 2.2964783710222036e-06
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_data16_periodI.2J2LMET30.root",
+    "dsid": null,
+    "entries": 1015729,
+    "max_residual_float64_gev": 6.038421906850999e-05,
+    "max_interval_gap_gev": 1.85921321076421e-05,
+    "nonoverlapping_single_rounding_intervals": 54561,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 13,
+        "met": 44.64345169067383,
+        "mx": -22.62363052368164,
+        "my": 38.48648452758789,
+        "residual_gev": 4.149620636439977e-06,
+        "interval_gap_gev": 1.1468763005950677e-07
+      },
+      {
+        "entry": 33,
+        "met": 139.56541442871094,
+        "mx": -113.26013946533203,
+        "my": -81.551513671875,
+        "residual_gev": 1.314517098194301e-05,
+        "interval_gap_gev": 1.910517255510058e-07
+      },
+      {
+        "entry": 68,
+        "met": 39.65262985229492,
+        "mx": -19.991357803344727,
+        "my": 34.244361877441406,
+        "residual_gev": 4.3753543792490746e-06,
+        "interval_gap_gev": 3.3999580040244837e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_data16_periodL.2J2LMET30.root",
+    "dsid": null,
+    "entries": 1148752,
+    "max_residual_float64_gev": 8.03632582346836e-05,
+    "max_interval_gap_gev": 1.9318559111525246e-05,
+    "nonoverlapping_single_rounding_intervals": 61554,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 0,
+    "bad_examples": [
+      {
+        "entry": 6,
+        "met": 35.7667236328125,
+        "mx": 11.447474479675293,
+        "my": -33.88529968261719,
+        "residual_gev": 4.373931716372681e-06,
+        "interval_gap_gev": 5.069495827569881e-07
+      },
+      {
+        "entry": 28,
+        "met": 43.360103607177734,
+        "mx": 34.33262634277344,
+        "my": -26.483386993408203,
+        "residual_gev": 4.997796068550997e-06,
+        "interval_gap_gev": 9.977217345635836e-07
+      },
+      {
+        "entry": 70,
+        "met": 35.27838134765625,
+        "mx": 1.4567852020263672,
+        "my": -35.248294830322266,
+        "residual_gev": 4.550371542677567e-06,
+        "interval_gap_gev": 7.348398582962545e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700323.Sh_2211_Zmumu_maxHTpTV2_BFilter.2J2LMET30.root",
+    "dsid": 700323,
+    "entries": 981366,
+    "max_residual_float64_gev": 0.0020908058759232517,
+    "max_interval_gap_gev": 0.0001081745867850259,
+    "nonoverlapping_single_rounding_intervals": 52843,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 2,
+    "bad_examples": [
+      {
+        "entry": 16,
+        "met": 61.710819244384766,
+        "mx": -60.092254638671875,
+        "my": 14.0408935546875,
+        "residual_gev": 4.436498365123498e-06,
+        "interval_gap_gev": 5.633341402244696e-07
+      },
+      {
+        "entry": 29,
+        "met": 38.79585266113281,
+        "mx": 17.182950973510742,
+        "my": 34.78310012817383,
+        "residual_gev": 4.188845984742784e-06,
+        "interval_gap_gev": 1.490414192062417e-07
+      },
+      {
+        "entry": 76,
+        "met": 30.02177619934082,
+        "mx": 28.17262840270996,
+        "my": 10.373519897460938,
+        "residual_gev": 2.3313596351215438e-06,
+        "interval_gap_gev": 3.1798804656091306e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700321.Sh_2211_Zee_maxHTpTV2_CFilterBVeto.2J2LMET30.root",
+    "dsid": 700321,
+    "entries": 1779982,
+    "max_residual_float64_gev": 0.001138641768193338,
+    "max_interval_gap_gev": 0.0003053436721529579,
+    "nonoverlapping_single_rounding_intervals": 95550,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 1,
+    "bad_examples": [
+      {
+        "entry": 19,
+        "met": 50.31465530395508,
+        "mx": 32.52867126464844,
+        "my": -38.38555145263672,
+        "residual_gev": 4.7323264524834485e-06,
+        "interval_gap_gev": 1.3673257370783176e-07
+      },
+      {
+        "entry": 27,
+        "met": 46.85536575317383,
+        "mx": -46.35378646850586,
+        "my": 6.837568759918213,
+        "residual_gev": 6.0468070799402085e-06,
+        "interval_gap_gev": 2.217735683984756e-06
+      },
+      {
+        "entry": 46,
+        "met": 32.67878723144531,
+        "mx": 31.358688354492188,
+        "my": 9.19434642791748,
+        "residual_gev": 3.1615714206623124e-06,
+        "interval_gap_gev": 2.0491278718282047e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700324.Sh_2211_Zmumu_maxHTpTV2_CFilterBVeto.2J2LMET30.root",
+    "dsid": 700324,
+    "entries": 4168561,
+    "max_residual_float64_gev": 0.05736209871247411,
+    "max_interval_gap_gev": 3.5058128560194746e-05,
+    "nonoverlapping_single_rounding_intervals": 223829,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 4,
+    "bad_examples": [
+      {
+        "entry": 63,
+        "met": 73.85980987548828,
+        "mx": 17.344385147094727,
+        "my": -71.79446411132812,
+        "residual_gev": 8.518301058302313e-06,
+        "interval_gap_gev": 7.71627696849464e-07
+      },
+      {
+        "entry": 74,
+        "met": 55.66069030761719,
+        "mx": 45.939701080322266,
+        "my": 31.4270076751709,
+        "residual_gev": 4.5026761270605675e-06,
+        "interval_gap_gev": 4.826309805139317e-07
+      },
+      {
+        "entry": 81,
+        "met": 49.09391784667969,
+        "mx": 21.62006187438965,
+        "my": 44.0770378112793,
+        "residual_gev": 4.3983775483980025e-06,
+        "interval_gap_gev": 3.5861028635508774e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700322.Sh_2211_Zee_maxHTpTV2_CVetoBVeto.2J2LMET30.root",
+    "dsid": 700322,
+    "entries": 4679298,
+    "max_residual_float64_gev": 0.0016283967561321333,
+    "max_interval_gap_gev": 5.235482035459427e-05,
+    "nonoverlapping_single_rounding_intervals": 250376,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 2,
+    "bad_examples": [
+      {
+        "entry": 4,
+        "met": 39.07607650756836,
+        "mx": 5.967184543609619,
+        "my": 38.61777877807617,
+        "residual_gev": 4.784315606798373e-06,
+        "interval_gap_gev": 9.555804680871915e-07
+      },
+      {
+        "entry": 24,
+        "met": 33.96836471557617,
+        "mx": 32.210487365722656,
+        "my": -10.785821914672852,
+        "residual_gev": 5.162715574158483e-06,
+        "interval_gap_gev": 1.2953161530049329e-06
+      },
+      {
+        "entry": 33,
+        "met": 58.751827239990234,
+        "mx": -45.130455017089844,
+        "my": 37.61674880981445,
+        "residual_gev": 4.740555247906286e-06,
+        "interval_gap_gev": 1.4686032301369778e-07
+      }
+    ]
+  },
+  {
+    "file": "ODEO_FEB2025_v0_2J2LMET30_mc_700325.Sh_2211_Zmumu_maxHTpTV2_CVetoBVeto.2J2LMET30.root",
+    "dsid": 700325,
+    "entries": 12311528,
+    "max_residual_float64_gev": 0.008119606849504635,
+    "max_interval_gap_gev": 0.001033603934047278,
+    "nonoverlapping_single_rounding_intervals": 661863,
+    "violations_with_0p01_gev_allowance": 0,
+    "met_over_13tev": 13,
+    "bad_examples": [
+      {
+        "entry": 21,
+        "met": 39.57545852661133,
+        "mx": -37.02366256713867,
+        "my": 13.980876922607422,
+        "residual_gev": 5.1569979575560865e-06,
+        "interval_gap_gev": 1.2968319325068478e-06
+      },
+      {
+        "entry": 22,
+        "met": 70.94550323486328,
+        "mx": 19.521499633789062,
+        "my": -68.20684814453125,
+        "residual_gev": 9.496619611581991e-06,
+        "interval_gap_gev": 1.752065557525384e-06
+      },
+      {
+        "entry": 30,
+        "met": 36.450740814208984,
+        "mx": 35.078060150146484,
+        "my": 9.908910751342773,
+        "residual_gev": 4.2560275232972344e-06,
+        "interval_gap_gev": 3.8353314124606186e-07
+      }
+    ]
+  }
+]

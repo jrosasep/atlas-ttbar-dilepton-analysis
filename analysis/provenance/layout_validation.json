@@ -1,0 +1,16 @@
+{
+  "core_modules_byte_identical": true,
+  "all_summary_values_unchanged": true,
+  "new_entrypoint_tested": [
+    "python run.py check",
+    "python run.py plot"
+  ],
+  "tests_without_data": "13 passed, 5 deselected",
+  "full_analysis_not_repeated_for_layout_change": true,
+  "data_download_not_repeated": true,
+  "removed": [
+    "generated Python and pytest caches",
+    "obsolete layout checksums"
+  ],
+  "publication": "local only; no GitHub operation"
+}

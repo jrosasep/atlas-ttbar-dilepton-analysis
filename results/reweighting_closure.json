@@ -1,9 +1,0 @@
-{
-  "nominal_truth": -0.47,
-  "target_truth": -0.537,
-  "unweighted_estimate": -0.4701516891725738,
-  "reweighted_estimate": -0.5371118022927515,
-  "absolute_closure_error": 0.00011180229275142839,
-  "seed": 20260927,
-  "n_events": 2000000
-}

@@ -1,0 +1,6 @@
+# Preservar bytes de código: las huellas de la corrida son sensibles a CRLF/LF.
+* -text
+*.py -text
+*.json -text
+*.png binary
+*.pdf binary

@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "files_processed": 63,
+  "unchanged_baseline_histograms": 280,
+  "all_baseline_cutflows_and_yields_unchanged": true,
+  "delta_eta_totals_match_all_regions": true,
+  "tests_full_local": "18 passed",
+  "tests_staged_without_ROOT": "13 passed, 5 integration tests deselected",
+  "plots_regenerated_from_staged_results_without_ROOT": true,
+  "global_checks": {
+    "unique_data_events": 6242521,
+    "expected_data_events": 6242521,
+    "all_checks_passed": true
+  },
+  "scope": "Local candidate; no push, visibility change or email sent."
+}

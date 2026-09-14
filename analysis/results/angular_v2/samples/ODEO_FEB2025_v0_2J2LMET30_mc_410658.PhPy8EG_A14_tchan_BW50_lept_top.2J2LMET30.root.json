@@ -1,0 +1,1651 @@
+{
+  "file": "ODEO_FEB2025_v0_2J2LMET30_mc_410658.PhPy8EG_A14_tchan_BW50_lept_top.2J2LMET30.root",
+  "dsid": 410658,
+  "group": "single_top",
+  "entries": 7362,
+  "branches": {
+    "sig_lep": "RVec<bool>",
+    "n_sig_lep": "uint64_t",
+    "num_events": "double",
+    "sum_of_weights": "double",
+    "sum_of_weights_squared": "double",
+    "xsec": "double",
+    "kfac": "double",
+    "filteff": "double",
+    "TriggerMatch_DILEPTON": "float",
+    "ScaleFactor_MLTRIGGER": "float",
+    "ScaleFactor_PILEUP": "float",
+    "ScaleFactor_FTAG": "float",
+    "mcWeight": "float",
+    "channelNumber": "uint32_t",
+    "eventNumber": "uint64_t",
+    "runNumber": "uint32_t",
+    "trigML": "bool",
+    "trigP": "bool",
+    "trigDT": "bool",
+    "trigT": "bool",
+    "trigE": "bool",
+    "trigDM": "bool",
+    "trigDE": "bool",
+    "trigM": "bool",
+    "trigMET": "bool",
+    "ScaleFactor_BTAG": "float",
+    "ScaleFactor_JVT": "float",
+    "jet_n": "int32_t",
+    "jet_pt": "RVec<float>",
+    "jet_eta": "RVec<float>",
+    "jet_phi": "RVec<float>",
+    "jet_e": "RVec<float>",
+    "jet_btag_quantile": "RVec<int32_t>",
+    "jet_jvt": "RVec<bool>",
+    "largeRJet_n": "int32_t",
+    "largeRJet_pt": "RVec<float>",
+    "largeRJet_eta": "RVec<float>",
+    "largeRJet_phi": "RVec<float>",
+    "largeRJet_e": "RVec<float>",
+    "largeRJet_m": "RVec<float>",
+    "largeRJet_D2": "RVec<float>",
+    "jet_pt_jer1": "RVec<float>",
+    "jet_pt_jer2": "RVec<float>",
+    "ScaleFactor_ELE": "float",
+    "ScaleFactor_MUON": "float",
+    "ScaleFactor_LepTRIGGER": "float",
+    "ScaleFactor_MuTRIGGER": "float",
+    "ScaleFactor_ElTRIGGER": "float",
+    "lep_n": "int32_t",
+    "lep_type": "RVec<int32_t>",
+    "lep_pt": "RVec<float>",
+    "lep_eta": "RVec<float>",
+    "lep_phi": "RVec<float>",
+    "lep_e": "RVec<float>",
+    "lep_charge": "RVec<int32_t>",
+    "lep_ptvarcone30": "RVec<float>",
+    "lep_topoetcone20": "RVec<float>",
+    "lep_z0": "RVec<float>",
+    "lep_d0": "RVec<float>",
+    "lep_d0sig": "RVec<float>",
+    "lep_isTightID": "RVec<bool>",
+    "lep_isMediumID": "RVec<bool>",
+    "lep_isLooseID": "RVec<bool>",
+    "lep_isTightIso": "RVec<bool>",
+    "lep_isLooseIso": "RVec<bool>",
+    "lep_isTrigMatched": "RVec<bool>",
+    "ScaleFactor_PHOTON": "float",
+    "photon_n": "int32_t",
+    "photon_pt": "RVec<float>",
+    "photon_eta": "RVec<float>",
+    "photon_phi": "RVec<float>",
+    "photon_e": "RVec<float>",
+    "photon_ptcone20": "RVec<float>",
+    "photon_topoetcone40": "RVec<float>",
+    "photon_isLooseID": "RVec<bool>",
+    "photon_isTightID": "RVec<bool>",
+    "photon_isLooseIso": "RVec<bool>",
+    "photon_isTightIso": "RVec<bool>",
+    "ScaleFactor_TAU": "float",
+    "ScaleFactor_TauTRIGGER": "float",
+    "ScaleFactor_DiTauTRIGGER": "float",
+    "tau_n": "int32_t",
+    "tau_pt": "RVec<float>",
+    "tau_eta": "RVec<float>",
+    "tau_phi": "RVec<float>",
+    "tau_e": "RVec<float>",
+    "tau_charge": "RVec<float>",
+    "tau_nTracks": "RVec<int32_t>",
+    "tau_isTight": "RVec<bool>",
+    "tau_RNNJetScore": "RVec<float>",
+    "tau_RNNEleScore": "RVec<float>",
+    "truth_jet_n": "int32_t",
+    "truth_jet_pt": "RVec<float>",
+    "truth_jet_eta": "RVec<float>",
+    "truth_jet_phi": "RVec<float>",
+    "truth_jet_m": "RVec<float>",
+    "truth_elec_n": "int32_t",
+    "truth_elec_pt": "RVec<float>",
+    "truth_elec_eta": "RVec<float>",
+    "truth_elec_phi": "RVec<float>",
+    "truth_muon_n": "int32_t",
+    "truth_muon_pt": "RVec<float>",
+    "truth_muon_eta": "RVec<float>",
+    "truth_muon_phi": "RVec<float>",
+    "truth_tau_n": "int32_t",
+    "truth_tau_pt": "RVec<float>",
+    "truth_tau_eta": "RVec<float>",
+    "truth_tau_phi": "RVec<float>",
+    "truth_photon_n": "int32_t",
+    "truth_photon_pt": "RVec<float>",
+    "truth_photon_eta": "RVec<float>",
+    "truth_photon_phi": "RVec<float>",
+    "truth_met": "float",
+    "truth_met_phi": "float",
+    "met": "float",
+    "met_phi": "float",
+    "met_mpx": "float",
+    "met_mpy": "float"
+  },
+  "cutflow": {
+    "input": {
+      "raw": 7362,
+      "sumw": 3312.7758266499964,
+      "sumw2": 1631.424764701353
+    },
+    "trigger": {
+      "raw": 4546,
+      "sumw": 2007.6179063471018,
+      "sumw2": 983.4723291005449
+    },
+    "one_e_one_mu_matched": {
+      "raw": 14,
+      "sumw": 6.1567459137414575,
+      "sumw2": 2.8798145203180208
+    },
+    "opposite_sign": {
+      "raw": 5,
+      "sumw": 2.111845675396492,
+      "sumw2": 1.0395869097486536
+    },
+    "two_jets_jvt": {
+      "raw": 3,
+      "sumw": 1.1443834094390348,
+      "sumw2": 0.5662285415436894
+    },
+    "one_bjet": {
+      "raw": 1,
+      "sumw": 0.516086957091702,
+      "sumw2": 0.2663457472801723
+    },
+    "two_bjets": {
+      "raw": 0,
+      "sumw": 0.0,
+      "sumw2": 0.0
+    }
+  },
+  "histograms": {
+    "SR1b": {
+      "electron_pt": {
+        "sumw": [
+          0.0,
+          0.0,
+          0.0,
+          0.516086957091702,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.0,
+          0.0,
+          0.2663457472801723,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "muon_pt": {
+        "sumw": [
+          0.0,
+          0.0,
+          0.0,
+          0.516086957091702,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.0,
+          0.0,
+          0.2663457472801723,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "n_jets": {
+        "sumw": [
+          0.0,
+          0.516086957091702,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.2663457472801723,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "delta_phi": {
+        "sumw": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.516086957091702,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.2663457472801723,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "delta_eta": {
+        "sumw": [
+          0.0,
+          0.516086957091702,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.2663457472801723,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "m_emu": {
+        "sumw": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.516086957091702,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.2663457472801723,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "met": {
+        "sumw": [
+          0.516086957091702,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.2663457472801723,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "n_bjets": {
+        "sumw": [
+          0.0,
+          0.516086957091702,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.2663457472801723,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      }
+    },
+    "SR2b": {
+      "electron_pt": {
+        "sumw": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "muon_pt": {
+        "sumw": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "n_jets": {
+        "sumw": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "delta_phi": {
+        "sumw": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "delta_eta": {
+        "sumw": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "m_emu": {
+        "sumw": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "met": {
+        "sumw": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "n_bjets": {
+        "sumw": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      }
+    },
+    "PRETAG": {
+      "electron_pt": {
+        "sumw": [
+          0.0,
+          0.6282964523473327,
+          0.0,
+          0.5160869570917019,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.29988279426351705,
+          0.0,
+          0.26634574728017235,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "muon_pt": {
+        "sumw": [
+          0.0,
+          0.0,
+          0.6282964523473327,
+          0.5160869570917019,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.0,
+          0.29988279426351705,
+          0.26634574728017235,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "n_jets": {
+        "sumw": [
+          0.08775854194821958,
+          1.056624867490815,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.007701561684877416,
+          0.558526979858812,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          1,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "delta_phi": {
+        "sumw": [
+          0.5405379103991131,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.6038454990399217,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.29218123257863965,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.27404730896504975,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "delta_eta": {
+        "sumw": [
+          0.5405379103991131,
+          0.516086957091702,
+          0.0,
+          0.08775854194821964,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.29218123257863965,
+          0.2663457472801723,
+          0.0,
+          0.007701561684877456,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "m_emu": {
+        "sumw": [
+          0.5405379103991131,
+          0.0,
+          0.0,
+          0.0,
+          0.6038454990399217,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.29218123257863965,
+          0.0,
+          0.0,
+          0.0,
+          0.27404730896504975,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          1,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "met": {
+        "sumw": [
+          0.6038454990399216,
+          0.0,
+          0.540537910399113,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.2740473089650497,
+          0.0,
+          0.2921812325786397,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "n_bjets": {
+        "sumw": [
+          0.6282964523473327,
+          0.5160869570917019,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.29988279426351705,
+          0.26634574728017235,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      }
+    },
+    "ZEROb": {
+      "electron_pt": {
+        "sumw": [
+          0.0,
+          0.6282964523473327,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.29988279426351705,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "muon_pt": {
+        "sumw": [
+          0.0,
+          0.0,
+          0.6282964523473327,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.0,
+          0.29988279426351705,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "n_jets": {
+        "sumw": [
+          0.08775854194821958,
+          0.540537910399113,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.007701561684877416,
+          0.29218123257863965,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "delta_phi": {
+        "sumw": [
+          0.5405379103991131,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.08775854194821953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.29218123257863965,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0077015616848774004,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "delta_eta": {
+        "sumw": [
+          0.5405379103991131,
+          0.0,
+          0.0,
+          0.08775854194821953,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.29218123257863965,
+          0.0,
+          0.0,
+          0.0077015616848774004,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "m_emu": {
+        "sumw": [
+          0.5405379103991131,
+          0.0,
+          0.0,
+          0.0,
+          0.08775854194821953,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.29218123257863965,
+          0.0,
+          0.0,
+          0.0,
+          0.0077015616848774004,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "met": {
+        "sumw": [
+          0.08775854194821958,
+          0.0,
+          0.540537910399113,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.007701561684877416,
+          0.0,
+          0.29218123257863965,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "n_bjets": {
+        "sumw": [
+          0.6282964523473327,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.29988279426351705,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      }
+    },
+    "SS1b": {
+      "electron_pt": {
+        "sumw": [
+          0.9014652936812703,
+          0.0,
+          0.8569943796340113,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.40684313825352936,
+          0.0,
+          0.3758388558871929,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          2,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "muon_pt": {
+        "sumw": [
+          0.4941446289332841,
+          0.0,
+          0.36284975070072717,
+          0.9014652936812703,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.24417891430361302,
+          0.0,
+          0.13165994158357988,
+          0.40684313825352925,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          1,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "n_jets": {
+        "sumw": [
+          1.3239026315266977,
+          0.0,
+          0.4345570417885838,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.5938421715726773,
+          0.0,
+          0.18883982256804488,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          3,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "delta_phi": {
+        "sumw": [
+          0.46690825189268653,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.36284975070072717,
+          0.9287016707218678,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.21800331568548442,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.13165994158357985,
+          0.43301873687165787,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "delta_eta": {
+        "sumw": [
+          0.8297580025934137,
+          0.4345570417885838,
+          0.49414462893328404,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.3496632572690643,
+          0.18883982256804493,
+          0.24417891430361305,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          2,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "m_emu": {
+        "sumw": [
+          0.46690825189268653,
+          0.0,
+          0.0,
+          1.291551421422595,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.21800331568548442,
+          0.0,
+          0.0,
+          0.5646786784552378,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          1,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "met": {
+        "sumw": [
+          0.46690825189268653,
+          0.4941446289332841,
+          0.3628497507007271,
+          0.0,
+          0.0,
+          0.4345570417885838,
+          0.0
+        ],
+        "sumw2": [
+          0.21800331568548442,
+          0.244178914303613,
+          0.13165994158357985,
+          0.0,
+          0.0,
+          0.18883982256804488,
+          0.0
+        ],
+        "raw": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "n_bjets": {
+        "sumw": [
+          0.0,
+          1.291551421422595,
+          0.4669082518926866,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          0.5646786784552378,
+          0.21800331568548437,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          3,
+          1,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      }
+    }
+  },
+  "regions": {
+    "SR1b": {
+      "raw": 1,
+      "sumw": 0.516086957091702,
+      "sumw2": 0.2663457472801723
+    },
+    "SR2b": {
+      "raw": 0,
+      "sumw": 0.0,
+      "sumw2": 0.0
+    },
+    "PRETAG": {
+      "raw": 3,
+      "sumw": 1.1443834094390348,
+      "sumw2": 0.5662285415436894
+    },
+    "ZEROb": {
+      "raw": 2,
+      "sumw": 0.6282964523473327,
+      "sumw2": 0.29988279426351705
+    },
+    "SS1b": {
+      "raw": 4,
+      "sumw": 1.7584596733152815,
+      "sumw2": 0.7826819941407221
+    }
+  },
+  "processed": 7362,
+  "negative_generator_weights": 45,
+  "negative_final_weights": 45,
+  "zero_final_weights": 97,
+  "max_met_residual_gev": 4.368755008954395e-05,
+  "max_abs_weight": 3.5454557245196963,
+  "metadata": {
+    "dataset_number": "410658",
+    "physics_short": "PhPy8EG_A14_tchan_BW50_lept_top",
+    "e-tag": "e6671",
+    "crossSection_pb": "36.996",
+    "genFiltEff": "1.0",
+    "kFactor": "1.1935",
+    "nEvents": "3360000.0",
+    "sumOfWeights": "124412662.10998063",
+    "sumOfWeightsSquared": "4978964942.567033",
+    "process": "t-channel single top",
+    "generator": "Powheg+Pythia8.230+EvtGen",
+    "keywords": "['SM', 'lepton', 'top']",
+    "description": "POWHEG+Pythia8+EvtGen single-top-quark t-channel (2->3) production (top),MadSpin, A14 tune, ME NNPDF3.04f NLO, A14 NNPDF23 LO'",
+    "job_path": "https://gitlab.cern.ch/atlas-physics/pmg/infrastructure/mc15joboptions/-/tree/master/share/DSID410xxx/MC15.410658.PhPy8EG_A14_tchan_BW50_lept_top.py"
+  },
+  "mass_rounding": {
+    "SR1b": {
+      "count": 0,
+      "minimum_m2_gev2": 0.0,
+      "max_relative_negative": 0.0
+    },
+    "SR2b": {
+      "count": 0,
+      "minimum_m2_gev2": 0.0,
+      "max_relative_negative": 0.0
+    },
+    "PRETAG": {
+      "count": 0,
+      "minimum_m2_gev2": 0.0,
+      "max_relative_negative": 0.0
+    },
+    "ZEROb": {
+      "count": 0,
+      "minimum_m2_gev2": 0.0,
+      "max_relative_negative": 0.0
+    },
+    "SS1b": {
+      "count": 0,
+      "minimum_m2_gev2": 0.0,
+      "max_relative_negative": 0.0
+    }
+  },
+  "extreme_met": {
+    "input_over_13tev": 0,
+    "max_input_gev": 465.32818603515625,
+    "regions_over_13tev": {
+      "SR1b": 0,
+      "SR2b": 0,
+      "PRETAG": 0,
+      "ZEROb": 0,
+      "SS1b": 0
+    }
+  },
+  "input_sha256": "651bcd911b45825762111dcbaf4b6ee9378aa4d53361fdd5872d7cdab52902a3",
+  "seconds": 0.31,
+  "code_sha256": "cd57f7fa80864217f2f14e9b289906b354497102d76db12627950c2bdac787c8",
+  "config": {
+    "lepton_pt": 25.0,
+    "jet_pt": 25.0,
+    "btag_quantile": 2,
+    "luminosity_pb": 36000.0
+  },
+  "pipeline_hashes": {
+    "analysis.py": "cd57f7fa80864217f2f14e9b289906b354497102d76db12627950c2bdac787c8",
+    "audit_met_inputs.py": "5200226ed3716f70f3289a31169e7d2aeffebc358f58fc3a7aea77da5ac5e41b",
+    "fetch_inputs.py": "a7b7400838d715e44fef1c5d5ad59353b3c081605515e825e14ba721efb32505"
+  }
+}

@@ -1,0 +1,1637 @@
+{
+  "file": "ODEO_FEB2025_v0_2J2LMET30_data16_periodG.2J2LMET30.root",
+  "dsid": null,
+  "group": "data",
+  "entries": 665596,
+  "branches": {
+    "num_events": "double",
+    "sum_of_weights": "double",
+    "sum_of_weights_squared": "double",
+    "category": "std::string",
+    "sig_lep": "RVec<bool>",
+    "n_sig_lep": "uint64_t",
+    "TriggerMatch_DILEPTON": "float",
+    "ScaleFactor_MLTRIGGER": "float",
+    "ScaleFactor_PILEUP": "float",
+    "ScaleFactor_FTAG": "float",
+    "mcWeight": "float",
+    "xsec": "float",
+    "filteff": "float",
+    "kfac": "float",
+    "channelNumber": "uint32_t",
+    "eventNumber": "uint64_t",
+    "runNumber": "uint32_t",
+    "trigML": "bool",
+    "trigP": "bool",
+    "trigDT": "bool",
+    "trigT": "bool",
+    "trigE": "bool",
+    "trigDM": "bool",
+    "trigDE": "bool",
+    "trigM": "bool",
+    "trigMET": "bool",
+    "ScaleFactor_BTAG": "float",
+    "ScaleFactor_JVT": "float",
+    "jet_n": "int32_t",
+    "jet_pt": "RVec<float>",
+    "jet_eta": "RVec<float>",
+    "jet_phi": "RVec<float>",
+    "jet_e": "RVec<float>",
+    "jet_btag_quantile": "RVec<int32_t>",
+    "jet_jvt": "RVec<bool>",
+    "largeRJet_n": "int32_t",
+    "largeRJet_pt": "RVec<float>",
+    "largeRJet_eta": "RVec<float>",
+    "largeRJet_phi": "RVec<float>",
+    "largeRJet_e": "RVec<float>",
+    "largeRJet_m": "RVec<float>",
+    "largeRJet_D2": "RVec<float>",
+    "jet_pt_jer1": "RVec<float>",
+    "jet_pt_jer2": "RVec<float>",
+    "ScaleFactor_ELE": "float",
+    "ScaleFactor_MUON": "float",
+    "ScaleFactor_LepTRIGGER": "float",
+    "ScaleFactor_MuTRIGGER": "float",
+    "ScaleFactor_ElTRIGGER": "float",
+    "lep_n": "int32_t",
+    "lep_type": "RVec<int32_t>",
+    "lep_pt": "RVec<float>",
+    "lep_eta": "RVec<float>",
+    "lep_phi": "RVec<float>",
+    "lep_e": "RVec<float>",
+    "lep_charge": "RVec<int32_t>",
+    "lep_ptvarcone30": "RVec<float>",
+    "lep_topoetcone20": "RVec<float>",
+    "lep_z0": "RVec<float>",
+    "lep_d0": "RVec<float>",
+    "lep_d0sig": "RVec<float>",
+    "lep_isTightID": "RVec<bool>",
+    "lep_isMediumID": "RVec<bool>",
+    "lep_isLooseID": "RVec<bool>",
+    "lep_isTightIso": "RVec<bool>",
+    "lep_isLooseIso": "RVec<bool>",
+    "lep_isTrigMatched": "RVec<bool>",
+    "ScaleFactor_PHOTON": "float",
+    "photon_n": "int32_t",
+    "photon_pt": "RVec<float>",
+    "photon_eta": "RVec<float>",
+    "photon_phi": "RVec<float>",
+    "photon_e": "RVec<float>",
+    "photon_ptcone20": "RVec<float>",
+    "photon_topoetcone40": "RVec<float>",
+    "photon_isLooseID": "RVec<bool>",
+    "photon_isTightID": "RVec<bool>",
+    "photon_isLooseIso": "RVec<bool>",
+    "photon_isTightIso": "RVec<bool>",
+    "ScaleFactor_TAU": "float",
+    "ScaleFactor_TauTRIGGER": "float",
+    "ScaleFactor_DiTauTRIGGER": "float",
+    "tau_n": "int32_t",
+    "tau_pt": "RVec<float>",
+    "tau_eta": "RVec<float>",
+    "tau_phi": "RVec<float>",
+    "tau_e": "RVec<float>",
+    "tau_charge": "RVec<float>",
+    "tau_nTracks": "RVec<int32_t>",
+    "tau_isTight": "RVec<bool>",
+    "tau_RNNJetScore": "RVec<float>",
+    "tau_RNNEleScore": "RVec<float>",
+    "truth_jet_n": "int32_t",
+    "truth_jet_pt": "RVec<float>",
+    "truth_jet_eta": "RVec<float>",
+    "truth_jet_phi": "RVec<float>",
+    "truth_jet_m": "RVec<float>",
+    "truth_elec_n": "int32_t",
+    "truth_elec_pt": "RVec<float>",
+    "truth_elec_eta": "RVec<float>",
+    "truth_elec_phi": "RVec<float>",
+    "truth_muon_n": "int32_t",
+    "truth_muon_pt": "RVec<float>",
+    "truth_muon_eta": "RVec<float>",
+    "truth_muon_phi": "RVec<float>",
+    "truth_tau_n": "int32_t",
+    "truth_tau_pt": "RVec<float>",
+    "truth_tau_eta": "RVec<float>",
+    "truth_tau_phi": "RVec<float>",
+    "truth_photon_n": "int32_t",
+    "truth_photon_pt": "RVec<float>",
+    "truth_photon_eta": "RVec<float>",
+    "truth_photon_phi": "RVec<float>",
+    "truth_met": "float",
+    "truth_met_phi": "float",
+    "met": "float",
+    "met_phi": "float",
+    "met_mpx": "float",
+    "met_mpy": "float"
+  },
+  "cutflow": {
+    "input": {
+      "raw": 665596,
+      "sumw": 665596.0,
+      "sumw2": 665596.0
+    },
+    "trigger": {
+      "raw": 392152,
+      "sumw": 392152.0,
+      "sumw2": 392152.0
+    },
+    "one_e_one_mu_matched": {
+      "raw": 11483,
+      "sumw": 11483.0,
+      "sumw2": 11483.0
+    },
+    "opposite_sign": {
+      "raw": 11357,
+      "sumw": 11357.0,
+      "sumw2": 11357.0
+    },
+    "two_jets_jvt": {
+      "raw": 9088,
+      "sumw": 9088.0,
+      "sumw2": 9088.0
+    },
+    "one_bjet": {
+      "raw": 7976,
+      "sumw": 7976.0,
+      "sumw2": 7976.0
+    },
+    "two_bjets": {
+      "raw": 3848,
+      "sumw": 3848.0,
+      "sumw2": 3848.0
+    }
+  },
+  "histograms": {
+    "SR1b": {
+      "electron_pt": {
+        "sumw": [
+          933.0,
+          1311.0,
+          1638.0,
+          1745.0,
+          1278.0,
+          685.0,
+          269.0,
+          117.0
+        ],
+        "sumw2": [
+          933.0,
+          1311.0,
+          1638.0,
+          1745.0,
+          1278.0,
+          685.0,
+          269.0,
+          117.0
+        ],
+        "raw": [
+          933,
+          1311,
+          1638,
+          1745,
+          1278,
+          685,
+          269,
+          117
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 15
+      },
+      "muon_pt": {
+        "sumw": [
+          1210.0,
+          1511.0,
+          1841.0,
+          1447.0,
+          1145.0,
+          494.0,
+          223.0,
+          105.0
+        ],
+        "sumw2": [
+          1210.0,
+          1511.0,
+          1841.0,
+          1447.0,
+          1145.0,
+          494.0,
+          223.0,
+          105.0
+        ],
+        "raw": [
+          1210,
+          1511,
+          1841,
+          1447,
+          1145,
+          494,
+          223,
+          105
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 15
+      },
+      "n_jets": {
+        "sumw": [
+          4466.0,
+          2319.0,
+          826.0,
+          275.0,
+          69.0,
+          21.0
+        ],
+        "sumw2": [
+          4466.0,
+          2319.0,
+          826.0,
+          275.0,
+          69.0,
+          21.0
+        ],
+        "raw": [
+          4466,
+          2319,
+          826,
+          275,
+          69,
+          21
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 4
+      },
+      "delta_phi": {
+        "sumw": [
+          353.0,
+          402.0,
+          398.0,
+          458.0,
+          532.0,
+          573.0,
+          638.0,
+          769.0,
+          839.0,
+          925.0,
+          999.0,
+          1090.0
+        ],
+        "sumw2": [
+          353.0,
+          402.0,
+          398.0,
+          458.0,
+          532.0,
+          573.0,
+          638.0,
+          769.0,
+          839.0,
+          925.0,
+          999.0,
+          1090.0
+        ],
+        "raw": [
+          353,
+          402,
+          398,
+          458,
+          532,
+          573,
+          638,
+          769,
+          839,
+          925,
+          999,
+          1090
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "delta_eta": {
+        "sumw": [
+          2165.0,
+          2013.0,
+          1593.0,
+          1115.0,
+          646.0,
+          287.0,
+          111.0,
+          36.0,
+          10.0,
+          0.0
+        ],
+        "sumw2": [
+          2165.0,
+          2013.0,
+          1593.0,
+          1115.0,
+          646.0,
+          287.0,
+          111.0,
+          36.0,
+          10.0,
+          0.0
+        ],
+        "raw": [
+          2165,
+          2013,
+          1593,
+          1115,
+          646,
+          287,
+          111,
+          36,
+          10,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "m_emu": {
+        "sumw": [
+          139.0,
+          561.0,
+          945.0,
+          1290.0,
+          1290.0,
+          1035.0,
+          1312.0,
+          975.0,
+          429.0
+        ],
+        "sumw2": [
+          139.0,
+          561.0,
+          945.0,
+          1290.0,
+          1290.0,
+          1035.0,
+          1312.0,
+          975.0,
+          429.0
+        ],
+        "raw": [
+          139,
+          561,
+          945,
+          1290,
+          1290,
+          1035,
+          1312,
+          975,
+          429
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 82
+      },
+      "met": {
+        "sumw": [
+          1128.0,
+          1317.0,
+          1786.0,
+          1976.0,
+          1144.0,
+          455.0,
+          170.0
+        ],
+        "sumw2": [
+          1128.0,
+          1317.0,
+          1786.0,
+          1976.0,
+          1144.0,
+          455.0,
+          170.0
+        ],
+        "raw": [
+          1128,
+          1317,
+          1786,
+          1976,
+          1144,
+          455,
+          170
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 27
+      },
+      "n_bjets": {
+        "sumw": [
+          0.0,
+          4128.0,
+          3677.0,
+          159.0,
+          12.0
+        ],
+        "sumw2": [
+          0.0,
+          4128.0,
+          3677.0,
+          159.0,
+          12.0
+        ],
+        "raw": [
+          0,
+          4128,
+          3677,
+          159,
+          12
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      }
+    },
+    "SR2b": {
+      "electron_pt": {
+        "sumw": [
+          485.0,
+          659.0,
+          785.0,
+          846.0,
+          593.0,
+          310.0,
+          122.0,
+          48.0
+        ],
+        "sumw2": [
+          485.0,
+          659.0,
+          785.0,
+          846.0,
+          593.0,
+          310.0,
+          122.0,
+          48.0
+        ],
+        "raw": [
+          485,
+          659,
+          785,
+          846,
+          593,
+          310,
+          122,
+          48
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 8
+      },
+      "muon_pt": {
+        "sumw": [
+          585.0,
+          761.0,
+          887.0,
+          684.0,
+          554.0,
+          228.0,
+          99.0,
+          50.0
+        ],
+        "sumw2": [
+          585.0,
+          761.0,
+          887.0,
+          684.0,
+          554.0,
+          228.0,
+          99.0,
+          50.0
+        ],
+        "raw": [
+          585,
+          761,
+          887,
+          684,
+          554,
+          228,
+          99,
+          50
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 8
+      },
+      "n_jets": {
+        "sumw": [
+          1877.0,
+          1244.0,
+          482.0,
+          177.0,
+          48.0,
+          20.0
+        ],
+        "sumw2": [
+          1877.0,
+          1244.0,
+          482.0,
+          177.0,
+          48.0,
+          20.0
+        ],
+        "raw": [
+          1877,
+          1244,
+          482,
+          177,
+          48,
+          20
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 4
+      },
+      "delta_phi": {
+        "sumw": [
+          164.0,
+          188.0,
+          186.0,
+          202.0,
+          263.0,
+          289.0,
+          304.0,
+          343.0,
+          425.0,
+          445.0,
+          495.0,
+          544.0
+        ],
+        "sumw2": [
+          164.0,
+          188.0,
+          186.0,
+          202.0,
+          263.0,
+          289.0,
+          304.0,
+          343.0,
+          425.0,
+          445.0,
+          495.0,
+          544.0
+        ],
+        "raw": [
+          164,
+          188,
+          186,
+          202,
+          263,
+          289,
+          304,
+          343,
+          425,
+          445,
+          495,
+          544
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "delta_eta": {
+        "sumw": [
+          1044.0,
+          945.0,
+          765.0,
+          537.0,
+          335.0,
+          146.0,
+          54.0,
+          17.0,
+          5.0,
+          0.0
+        ],
+        "sumw2": [
+          1044.0,
+          945.0,
+          765.0,
+          537.0,
+          335.0,
+          146.0,
+          54.0,
+          17.0,
+          5.0,
+          0.0
+        ],
+        "raw": [
+          1044,
+          945,
+          765,
+          537,
+          335,
+          146,
+          54,
+          17,
+          5,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "m_emu": {
+        "sumw": [
+          66.0,
+          262.0,
+          455.0,
+          638.0,
+          634.0,
+          495.0,
+          632.0,
+          475.0,
+          191.0
+        ],
+        "sumw2": [
+          66.0,
+          262.0,
+          455.0,
+          638.0,
+          634.0,
+          495.0,
+          632.0,
+          475.0,
+          191.0
+        ],
+        "raw": [
+          66,
+          262,
+          455,
+          638,
+          634,
+          495,
+          632,
+          475,
+          191
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 34
+      },
+      "met": {
+        "sumw": [
+          542.0,
+          648.0,
+          874.0,
+          990.0,
+          530.0,
+          197.0,
+          67.0
+        ],
+        "sumw2": [
+          542.0,
+          648.0,
+          874.0,
+          990.0,
+          530.0,
+          197.0,
+          67.0
+        ],
+        "raw": [
+          542,
+          648,
+          874,
+          990,
+          530,
+          197,
+          67
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 12
+      },
+      "n_bjets": {
+        "sumw": [
+          0.0,
+          0.0,
+          3677.0,
+          159.0,
+          12.0
+        ],
+        "sumw2": [
+          0.0,
+          0.0,
+          3677.0,
+          159.0,
+          12.0
+        ],
+        "raw": [
+          0,
+          0,
+          3677,
+          159,
+          12
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      }
+    },
+    "PRETAG": {
+      "electron_pt": {
+        "sumw": [
+          1059.0,
+          1478.0,
+          1869.0,
+          1984.0,
+          1443.0,
+          791.0,
+          320.0,
+          144.0
+        ],
+        "sumw2": [
+          1059.0,
+          1478.0,
+          1869.0,
+          1984.0,
+          1443.0,
+          791.0,
+          320.0,
+          144.0
+        ],
+        "raw": [
+          1059,
+          1478,
+          1869,
+          1984,
+          1443,
+          791,
+          320,
+          144
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 19
+      },
+      "muon_pt": {
+        "sumw": [
+          1375.0,
+          1706.0,
+          2083.0,
+          1668.0,
+          1285.0,
+          581.0,
+          256.0,
+          134.0
+        ],
+        "sumw2": [
+          1375.0,
+          1706.0,
+          2083.0,
+          1668.0,
+          1285.0,
+          581.0,
+          256.0,
+          134.0
+        ],
+        "raw": [
+          1375,
+          1706,
+          2083,
+          1668,
+          1285,
+          581,
+          256,
+          134
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 19
+      },
+      "n_jets": {
+        "sumw": [
+          5213.0,
+          2592.0,
+          889.0,
+          299.0,
+          74.0,
+          21.0
+        ],
+        "sumw2": [
+          5213.0,
+          2592.0,
+          889.0,
+          299.0,
+          74.0,
+          21.0
+        ],
+        "raw": [
+          5213,
+          2592,
+          889,
+          299,
+          74,
+          21
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 4
+      },
+      "delta_phi": {
+        "sumw": [
+          406.0,
+          476.0,
+          456.0,
+          525.0,
+          596.0,
+          655.0,
+          711.0,
+          884.0,
+          945.0,
+          1069.0,
+          1140.0,
+          1225.0
+        ],
+        "sumw2": [
+          406.0,
+          476.0,
+          456.0,
+          525.0,
+          596.0,
+          655.0,
+          711.0,
+          884.0,
+          945.0,
+          1069.0,
+          1140.0,
+          1225.0
+        ],
+        "raw": [
+          406,
+          476,
+          456,
+          525,
+          596,
+          655,
+          711,
+          884,
+          945,
+          1069,
+          1140,
+          1225
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "delta_eta": {
+        "sumw": [
+          2507.0,
+          2265.0,
+          1819.0,
+          1267.0,
+          723.0,
+          330.0,
+          124.0,
+          41.0,
+          12.0,
+          0.0
+        ],
+        "sumw2": [
+          2507.0,
+          2265.0,
+          1819.0,
+          1267.0,
+          723.0,
+          330.0,
+          124.0,
+          41.0,
+          12.0,
+          0.0
+        ],
+        "raw": [
+          2507,
+          2265,
+          1819,
+          1267,
+          723,
+          330,
+          124,
+          41,
+          12,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "m_emu": {
+        "sumw": [
+          163.0,
+          648.0,
+          1080.0,
+          1464.0,
+          1464.0,
+          1153.0,
+          1486.0,
+          1123.0,
+          507.0
+        ],
+        "sumw2": [
+          163.0,
+          648.0,
+          1080.0,
+          1464.0,
+          1464.0,
+          1153.0,
+          1486.0,
+          1123.0,
+          507.0
+        ],
+        "raw": [
+          163,
+          648,
+          1080,
+          1464,
+          1464,
+          1153,
+          1486,
+          1123,
+          507
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 99
+      },
+      "met": {
+        "sumw": [
+          1302.0,
+          1496.0,
+          2000.0,
+          2243.0,
+          1316.0,
+          523.0,
+          208.0
+        ],
+        "sumw2": [
+          1302.0,
+          1496.0,
+          2000.0,
+          2243.0,
+          1316.0,
+          523.0,
+          208.0
+        ],
+        "raw": [
+          1302,
+          1496,
+          2000,
+          2243,
+          1316,
+          523,
+          208
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 33
+      },
+      "n_bjets": {
+        "sumw": [
+          1112.0,
+          4128.0,
+          3677.0,
+          159.0,
+          12.0
+        ],
+        "sumw2": [
+          1112.0,
+          4128.0,
+          3677.0,
+          159.0,
+          12.0
+        ],
+        "raw": [
+          1112,
+          4128,
+          3677,
+          159,
+          12
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      }
+    },
+    "ZEROb": {
+      "electron_pt": {
+        "sumw": [
+          126.0,
+          167.0,
+          231.0,
+          239.0,
+          165.0,
+          106.0,
+          51.0,
+          27.0
+        ],
+        "sumw2": [
+          126.0,
+          167.0,
+          231.0,
+          239.0,
+          165.0,
+          106.0,
+          51.0,
+          27.0
+        ],
+        "raw": [
+          126,
+          167,
+          231,
+          239,
+          165,
+          106,
+          51,
+          27
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 4
+      },
+      "muon_pt": {
+        "sumw": [
+          165.0,
+          195.0,
+          242.0,
+          221.0,
+          140.0,
+          87.0,
+          33.0,
+          29.0
+        ],
+        "sumw2": [
+          165.0,
+          195.0,
+          242.0,
+          221.0,
+          140.0,
+          87.0,
+          33.0,
+          29.0
+        ],
+        "raw": [
+          165,
+          195,
+          242,
+          221,
+          140,
+          87,
+          33,
+          29
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 4
+      },
+      "n_jets": {
+        "sumw": [
+          747.0,
+          273.0,
+          63.0,
+          24.0,
+          5.0,
+          0.0
+        ],
+        "sumw2": [
+          747.0,
+          273.0,
+          63.0,
+          24.0,
+          5.0,
+          0.0
+        ],
+        "raw": [
+          747,
+          273,
+          63,
+          24,
+          5,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "delta_phi": {
+        "sumw": [
+          53.0,
+          74.0,
+          58.0,
+          67.0,
+          64.0,
+          82.0,
+          73.0,
+          115.0,
+          106.0,
+          144.0,
+          141.0,
+          135.0
+        ],
+        "sumw2": [
+          53.0,
+          74.0,
+          58.0,
+          67.0,
+          64.0,
+          82.0,
+          73.0,
+          115.0,
+          106.0,
+          144.0,
+          141.0,
+          135.0
+        ],
+        "raw": [
+          53,
+          74,
+          58,
+          67,
+          64,
+          82,
+          73,
+          115,
+          106,
+          144,
+          141,
+          135
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "delta_eta": {
+        "sumw": [
+          342.0,
+          252.0,
+          226.0,
+          152.0,
+          77.0,
+          43.0,
+          13.0,
+          5.0,
+          2.0,
+          0.0
+        ],
+        "sumw2": [
+          342.0,
+          252.0,
+          226.0,
+          152.0,
+          77.0,
+          43.0,
+          13.0,
+          5.0,
+          2.0,
+          0.0
+        ],
+        "raw": [
+          342,
+          252,
+          226,
+          152,
+          77,
+          43,
+          13,
+          5,
+          2,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "m_emu": {
+        "sumw": [
+          24.0,
+          87.0,
+          135.0,
+          174.0,
+          174.0,
+          118.0,
+          174.0,
+          148.0,
+          78.0
+        ],
+        "sumw2": [
+          24.0,
+          87.0,
+          135.0,
+          174.0,
+          174.0,
+          118.0,
+          174.0,
+          148.0,
+          78.0
+        ],
+        "raw": [
+          24,
+          87,
+          135,
+          174,
+          174,
+          118,
+          174,
+          148,
+          78
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 17
+      },
+      "met": {
+        "sumw": [
+          174.0,
+          179.0,
+          214.0,
+          267.0,
+          172.0,
+          68.0,
+          38.0
+        ],
+        "sumw2": [
+          174.0,
+          179.0,
+          214.0,
+          267.0,
+          172.0,
+          68.0,
+          38.0
+        ],
+        "raw": [
+          174,
+          179,
+          214,
+          267,
+          172,
+          68,
+          38
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 6
+      },
+      "n_bjets": {
+        "sumw": [
+          1112.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          1112.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          1112,
+          0,
+          0,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      }
+    },
+    "SS1b": {
+      "electron_pt": {
+        "sumw": [
+          3.0,
+          5.0,
+          9.0,
+          10.0,
+          12.0,
+          6.0,
+          2.0,
+          4.0
+        ],
+        "sumw2": [
+          3.0,
+          5.0,
+          9.0,
+          10.0,
+          12.0,
+          6.0,
+          2.0,
+          4.0
+        ],
+        "raw": [
+          3,
+          5,
+          9,
+          10,
+          12,
+          6,
+          2,
+          4
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 1
+      },
+      "muon_pt": {
+        "sumw": [
+          10.0,
+          5.0,
+          10.0,
+          12.0,
+          6.0,
+          5.0,
+          2.0,
+          1.0
+        ],
+        "sumw2": [
+          10.0,
+          5.0,
+          10.0,
+          12.0,
+          6.0,
+          5.0,
+          2.0,
+          1.0
+        ],
+        "raw": [
+          10,
+          5,
+          10,
+          12,
+          6,
+          5,
+          2,
+          1
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "n_jets": {
+        "sumw": [
+          27.0,
+          13.0,
+          5.0,
+          5.0,
+          1.0,
+          0.0
+        ],
+        "sumw2": [
+          27.0,
+          13.0,
+          5.0,
+          5.0,
+          1.0,
+          0.0
+        ],
+        "raw": [
+          27,
+          13,
+          5,
+          5,
+          1,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "delta_phi": {
+        "sumw": [
+          0.0,
+          2.0,
+          2.0,
+          5.0,
+          3.0,
+          2.0,
+          3.0,
+          2.0,
+          7.0,
+          9.0,
+          5.0,
+          11.0
+        ],
+        "sumw2": [
+          0.0,
+          2.0,
+          2.0,
+          5.0,
+          3.0,
+          2.0,
+          3.0,
+          2.0,
+          7.0,
+          9.0,
+          5.0,
+          11.0
+        ],
+        "raw": [
+          0,
+          2,
+          2,
+          5,
+          3,
+          2,
+          3,
+          2,
+          7,
+          9,
+          5,
+          11
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "delta_eta": {
+        "sumw": [
+          11.0,
+          16.0,
+          11.0,
+          5.0,
+          6.0,
+          0.0,
+          0.0,
+          2.0,
+          0.0,
+          0.0
+        ],
+        "sumw2": [
+          11.0,
+          16.0,
+          11.0,
+          5.0,
+          6.0,
+          0.0,
+          0.0,
+          2.0,
+          0.0,
+          0.0
+        ],
+        "raw": [
+          11,
+          16,
+          11,
+          5,
+          6,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "m_emu": {
+        "sumw": [
+          0.0,
+          2.0,
+          4.0,
+          5.0,
+          9.0,
+          9.0,
+          9.0,
+          7.0,
+          6.0
+        ],
+        "sumw2": [
+          0.0,
+          2.0,
+          4.0,
+          5.0,
+          9.0,
+          9.0,
+          9.0,
+          7.0,
+          6.0
+        ],
+        "raw": [
+          0,
+          2,
+          4,
+          5,
+          9,
+          9,
+          9,
+          7,
+          6
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 1
+      },
+      "met": {
+        "sumw": [
+          7.0,
+          4.0,
+          12.0,
+          15.0,
+          6.0,
+          5.0,
+          2.0
+        ],
+        "sumw2": [
+          7.0,
+          4.0,
+          12.0,
+          15.0,
+          6.0,
+          5.0,
+          2.0
+        ],
+        "raw": [
+          7,
+          4,
+          12,
+          15,
+          6,
+          5,
+          2
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      },
+      "n_bjets": {
+        "sumw": [
+          0.0,
+          31.0,
+          18.0,
+          2.0,
+          0.0
+        ],
+        "sumw2": [
+          0.0,
+          31.0,
+          18.0,
+          2.0,
+          0.0
+        ],
+        "raw": [
+          0,
+          31,
+          18,
+          2,
+          0
+        ],
+        "underflow_raw": 0,
+        "overflow_raw": 0
+      }
+    }
+  },
+  "regions": {
+    "SR1b": {
+      "raw": 7976,
+      "sumw": 7976.0,
+      "sumw2": 7976.0
+    },
+    "SR2b": {
+      "raw": 3848,
+      "sumw": 3848.0,
+      "sumw2": 3848.0
+    },
+    "PRETAG": {
+      "raw": 9088,
+      "sumw": 9088.0,
+      "sumw2": 9088.0
+    },
+    "ZEROb": {
+      "raw": 1112,
+      "sumw": 1112.0,
+      "sumw2": 1112.0
+    },
+    "SS1b": {
+      "raw": 51,
+      "sumw": 51.0,
+      "sumw2": 51.0
+    }
+  },
+  "processed": 665596,
+  "negative_generator_weights": 0,
+  "negative_final_weights": 0,
+  "zero_final_weights": 0,
+  "max_met_residual_gev": 5.4599865848103946e-05,
+  "max_abs_weight": 1.0,
+  "metadata": null,
+  "mass_rounding": {
+    "SR1b": {
+      "count": 0,
+      "minimum_m2_gev2": 0.0,
+      "max_relative_negative": 0.0
+    },
+    "SR2b": {
+      "count": 0,
+      "minimum_m2_gev2": 0.0,
+      "max_relative_negative": 0.0
+    },
+    "PRETAG": {
+      "count": 0,
+      "minimum_m2_gev2": 0.0,
+      "max_relative_negative": 0.0
+    },
+    "ZEROb": {
+      "count": 0,
+      "minimum_m2_gev2": 0.0,
+      "max_relative_negative": 0.0
+    },
+    "SS1b": {
+      "count": 0,
+      "minimum_m2_gev2": 0.0,
+      "max_relative_negative": 0.0
+    }
+  },
+  "extreme_met": {
+    "input_over_13tev": 0,
+    "max_input_gev": 1985.181640625,
+    "regions_over_13tev": {
+      "SR1b": 0,
+      "SR2b": 0,
+      "PRETAG": 0,
+      "ZEROb": 0,
+      "SS1b": 0
+    }
+  },
+  "input_sha256": "719d19f3b85aa5c8d5a9b68913fdc6f6581e50a5c3c6aded3ad557ff5bbd93b3",
+  "seconds": 6.02,
+  "code_sha256": "cd57f7fa80864217f2f14e9b289906b354497102d76db12627950c2bdac787c8",
+  "config": {
+    "lepton_pt": 25.0,
+    "jet_pt": 25.0,
+    "btag_quantile": 2,
+    "luminosity_pb": 36000.0
+  },
+  "pipeline_hashes": {
+    "analysis.py": "cd57f7fa80864217f2f14e9b289906b354497102d76db12627950c2bdac787c8",
+    "audit_met_inputs.py": "5200226ed3716f70f3289a31169e7d2aeffebc358f58fc3a7aea77da5ac5e41b",
+    "fetch_inputs.py": "a7b7400838d715e44fef1c5d5ad59353b3c081605515e825e14ba721efb32505"
+  }
+}
