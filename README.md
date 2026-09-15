@@ -1,73 +1,68 @@
-# Lab III — Distribuciones angulares eμ con ATLAS Open Data
+# ATLAS dilepton angular distributions
+## Distribuciones angulares dileptónicas con ATLAS Open Data
 
-Proyecto de José Ignacio Rosas Sepúlveda. Análisis educativo independiente:
-no es un resultado oficial de la colaboración ATLAS.
+Independent educational analysis developed for **Laboratorio III, Universidad de Concepción**.
+Análisis educativo independiente desarrollado para **Laboratorio III, Universidad de Concepción**.
 
-## 1. Qué estudiamos
+### Abstract
 
-¿Cómo se comparan las distribuciones de separación del electrón y del muón en
-colisiones reales, seleccionadas para enriquecer la producción top–antitop,
-con la simulación del Modelo Estándar y los fondos disponibles?
+This project compares the reconstructed electron-muon angular distributions in
+ATLAS collision data with a Standard Model Monte Carlo prediction. The selected
+sample is enriched in dileptonic top-antitop production. The observables are the
+azimuthal separation, Δφ(e,μ), and the absolute pseudorapidity separation,
+|Δη(e,μ)|.
 
-Calculamos Δφ (separación alrededor del haz) y |Δη| (separación absoluta en
-pseudorrapidez) a partir de los leptones reconstruidos.
+### Resumen
 
-## 2. Por dónde empezar
+Este proyecto compara las distribuciones angulares reconstruidas del electrón y
+del muón en colisiones registradas por ATLAS con una predicción Monte Carlo del
+Modelo Estándar. La muestra está enriquecida en producción dileptónica
+top-antitop. Los observables son la separación azimutal Δφ(e,μ) y la separación
+absoluta en pseudorrapidez |Δη(e,μ)|.
 
-1. Abre [el gráfico principal](results/angulos_conteos_SR2b.png): puntos negros =
-   colisiones; colores = simulaciones; panel inferior = cociente datos/MC.
-2. Lee [los resultados y sus límites](results/RESULTS.md).
-3. En [analysis.py](analysis/analysis.py), empieza por la función
-   **select_events**: decide qué eventos entran. Sigue por **event_weights** y **observables**.
-4. Consulta [las ecuaciones y cómo leer las figuras](results/METHOD.md).
+## Scientific question / Pregunta científica
 
-No necesitas estudiar cinco programas a la vez. **run.py es la única entrada
-que debes ejecutar.** Los otros archivos separan responsabilidades, no versiones.
+> To what extent are the observed Δφ(e,μ) and |Δη(e,μ)| distributions described
+> by the simulated top-antitop signal and the available background processes?
 
-## 3. Qué contiene cada carpeta
+> ¿En qué medida las distribuciones observadas de Δφ(e,μ) y |Δη(e,μ)| son
+> descritas por la señal top-antitop simulada y los procesos de fondo disponibles?
 
-| Carpeta | Contenido | Para qué abrirla |
-|---|---|---|
-| analysis/ | Código y archivos técnicos del cálculo. | Aprender o modificar el análisis. |
-| results/ | Figuras, tablas CSV, método y explicación de resultados. | Estudiar, presentar y comprobar números. |
-| licenses/ | Avisos del proyecto previo y de la referencia ATLAS. | Revisar atribuciones antes de publicar. |
+## Data and method / Datos y método
 
-Dentro de **analysis/**:
+| Component / Componente | Definition / Definición |
+|---|---|
+| Collision data / Datos | ATLAS proton-proton collisions, 2015-2016, √s = 13 TeV |
+| Simulation / Simulación | top-antitop, single-top, diboson, Z+jets, W+jets, ttV and H→WW |
+| Input format / Formato | Educational ROOT ntuples, `2J2LMET30` skim |
+| Main selection / Selección | One accepted electron and one accepted muon with opposite charge and pT > 25 GeV; at least two accepted jets and at least two b-tags |
+| Observables | Δφ(e,μ) and |Δη(e,μ)| |
+| Comparison / Comparación | Event yields, normalized shapes and data/MC ratios |
 
-- **manifest.json**: lista de los 63 archivos, grupos físicos, direcciones, tamaños
-  y metadatos. No contiene eventos.
-- **provenance/**: metadatos oficiales, comprobaciones de descarga y cálculo, y copia
-  de la referencia C++. No son análisis alternativos.
-- **results/angular_v2/**: registros de **la única corrida incluida**. **samples/**
-  tiene un JSON por ROOT; **run.json** registra la ejecución y **summary.json** agrupa
-  las muestras. Permiten dibujar sin ROOT. El nombre angular_v2 es un identificador
-  interno; no significa que se conserven aquí versiones antiguas.
-- **data/**: aparecerá si descargas o enlazas los ROOT. No se publica en GitHub.
+Monte Carlo events are weighted using the integrated luminosity, cross sections,
+generator weights and the available correction factors. The analysis is performed
+with reconstructed objects and reads the ROOT files in chunks.
 
-Los JSON internos son el registro detallado del cálculo; las tablas de results/
-son su presentación legible, no otra versión del análisis.
+## Preliminary result / Resultado preliminar
 
-En la raíz, **requirements-lock.txt** lista dependencias. Los archivos ocultos de Git
-excluyen datos/cachés y preservan los bytes utilizados para verificar el código.
+For the main selection, the current analysis finds:
 
-## 4. Qué hace cada programa y en qué orden
+| Collision data / Datos | Total MC / MC total | MC statistical uncertainty / Incertidumbre estadística MC | Predicted tt̄ fraction / Fracción tt̄ predicha |
+|---:|---:|---:|---:|
+| 36,945 | 36,691.3 | 131.9 | 96.57% |
 
-| Etapa | Archivo dentro de analysis/ | Responsabilidad |
-|---|---|---|
-| 1. Descargar | fetch_inputs.py | Obtiene archivos públicos y verifica tamaño y checksum. |
-| 2. Analizar | analysis.py | Lee bloques, comprueba entradas, selecciona eμ, calcula pesos y ángulos, llena histogramas. |
-| 3. Representar | plots_and_summary.py | Suma procesos, dibuja datos frente a MC y exporta tablas. |
-| Control auxiliar | audit_met_inputs.py | Comprueba consistencia del momento faltante redondeado. El análisis importa su función; no debes ejecutarlo aparte. |
-| Pruebas | test_analysis.py | Comprueba selección, fórmulas y entradas con ejemplos conocidos. |
+These numbers describe the selected sample as modelled by the available
+simulations. They do not identify the physical origin of individual collision
+events. The principal angular plots are available in
+[results/](results/), together with the [method](results/METHOD.md) and
+[numerical summary](results/RESULTS.md).
 
-**Archivos → selección → pesos y ángulos → histogramas → comparación.**
+Estos valores describen la muestra según las simulaciones disponibles, pero no
+identifican el origen físico de cada colisión real.
 
-run.py coordina estos programas y coloca las figuras y tablas en results/.
-pytest.ini configura las pruebas.
+## Reproduce / Reproducir
 
-## 5. Cómo ejecutar
-
-Con Python 3.12 y un entorno virtual, desde la raíz:
+Python 3.12 is recommended. From the repository root:
 
 ~~~text
 python -m pip install -r requirements-lock.txt
@@ -75,12 +70,11 @@ python run.py check
 python run.py plot
 ~~~
 
-Esto prueba funciones y regenera gráficos desde los resultados guardados:
-**no descarga datos ni vuelve a analizar los eventos**. Sin argumentos,
-run.py muestra ayuda. Las dependencias son las del entorno probado, no una
-garantía de compatibilidad con cualquier sistema.
+These commands run tests that do not require local ROOT files and regenerate the
+figures from the stored numerical results.
 
-Solo para repetir desde los eventos:
+To download and process the complete input used here (63 files, approximately
+14.97 GB):
 
 ~~~text
 python run.py download
@@ -88,77 +82,48 @@ python run.py check --with-data
 python run.py analyze
 ~~~
 
-La descarga ocupa **14,97 GB (13,94 GiB)**. Si ya tienes los ROOT, no los
-descargues otra vez: se puede enlazar analysis/data a su carpeta existente.
-Este paquete no incluye enlaces específicos al computador del autor.
-analyze también genera las figuras. Se leen bloques de 100 000 eventos;
-se necesita espacio adicional y tiempo. No usar Python con -O, que desactiva
-controles. Las huellas del código detectan incluso cambios de finales de línea.
+## Repository structure / Estructura
 
-## 6. De dónde vienen los datos
+~~~text
+analysis/   event selection, weights, observables, tests and provenance
+results/    figures, tables and explanation of the method
+licenses/   software notices and data attribution
+run.py      single command-line entry point
+~~~
 
-- [Colisiones reales: CERN 93934](https://opendata.cern.ch/record/93934).
-- [Simulación: CERN 93913](https://opendata.cern.ch/record/93913).
-- [Formato y unidades](https://opendata.atlas.cern/docs/data/for_education/13TeV25_details).
-- [Metadatos](https://opendata.atlas.cern/docs/data/for_education/13TeV25_metadata).
+The processing sequence is:
 
-Archivos educativos 2J2LMET30 de la entrega 2025; colisiones de 2015–2016 a
-13 TeV, **no todo el Run 2**. Ya tienen filtros previos.
-La luminosidad es el valor educativo redondeado de 36 fb⁻¹.
-MC incluye ttbar, single_top, diboson, Zjets, Wjets, ttV y HWW.
+~~~text
+ATLAS ROOT files → event selection → weights and observables
+                 → histograms → data/MC comparison
+~~~
 
-## 7. Qué usamos realmente de ATLAS
+## Current scope / Alcance actual
 
-La referencia implementada es
-[TTbarDilepAnalysis.C, commit ff71d6b](https://github.com/atlas-outreach-data-tools/atlas-outreach-cpp-framework-13tev/blob/ff71d6ba82f2afd5a45d2e9b7f80bf915ceb1c84/Analysis/TTbarDilepAnalysis/TTbarDilepAnalysis.C).
-Su copia está en analysis/provenance/official/.
+The current uncertainty bands are statistical. A complete treatment of
+systematic uncertainties and non-prompt or misidentified-lepton backgrounds is
+still pending. The distributions have not been corrected for detector acceptance
+and resolution. Therefore, this is a reconstructed-level educational comparison,
+not a precision measurement.
 
-| Criterio de referencia | Dónde se aplica |
-|---|---|
-| Trigger electrónico o muónico; leptones tight, aislados y asociados al trigger. | select_events. |
-| pT > 25 GeV y aceptación en η; exclusión de la transición del calorímetro para electrones. | Selección de objetos. |
-| Dos leptones de distinta especie y cargas opuestas. | Un electrón y un muón aceptados de cargas opuestas. |
-| Jets con JVT y jet_btag_quantile >= 2; al menos dos jets b. | Región principal SR2b. SR1b es una extensión auxiliar anidada. |
-| Pesos MC y factores de eficiencia. | event_weights, normalizado explícitamente con metadatos oficiales. |
+Las bandas actuales representan incertidumbres estadísticas. Todavía falta un
+tratamiento completo de las incertidumbres sistemáticas y de los fondos con
+leptones no prompt o mal identificados. Las distribuciones no han sido corregidas
+por aceptación y resolución del detector.
 
-**No ejecutamos el framework C++ ni comprobamos equivalencia evento a evento
-con él.** Adaptamos criterios a Python sobre la estructura preliminar del proyecto.
-El propio C++ advierte que es educativo, no una reproducción de resultados
-experimentales publicables de ATLAS.
+## Data, references and credit / Datos, referencias y créditos
 
-El [notebook stop recomendado en el correo de ATLAS](https://github.com/IoPapadopoulos/notebooks-collection-opendata/blob/fd47966c6efa51cf9b0bea7104c41e85a8c97468/13-TeV-examples/uproot_python/stop_analysis.ipynb)
-se revisó como referencia relacionada y usa el mismo skim.
-**No lo incorporamos como motor ejecutado**: sus cortes y objetivo difieren.
-Su recomendación no significa aprobación de nuestro código.
+- [ATLAS collision data, DOI 10.7483/OPENDATA.ATLAS.0CJR.N7ZT](https://doi.org/10.7483/OPENDATA.ATLAS.0CJR.N7ZT)
+- [ATLAS Monte Carlo simulation, DOI 10.7483/OPENDATA.ATLAS.NNF8.76IX](https://doi.org/10.7483/OPENDATA.ATLAS.NNF8.76IX)
+- [ATLAS Open Data documentation](https://opendata.atlas.cern/docs/data/for_education/13TeV25_details)
+- [Educational TTbarDilepAnalysis reference](https://github.com/atlas-outreach-data-tools/atlas-outreach-cpp-framework-13tev/tree/ff71d6ba82f2afd5a45d2e9b7f80bf915ceb1c84/Analysis/TTbarDilepAnalysis)
 
-Aquí se desarrollaron los histogramas angulares, la región auxiliar, controles
-de calidad y duplicados, pruebas, tablas y comparación de formas con propagación
-de covarianza al normalizar. No deben atribuirse como implementación oficial.
+The original ROOT files are hosted by CERN and are not duplicated in this
+repository. Their exact paths and checksums are recorded in
+[analysis/manifest.json](analysis/manifest.json). ATLAS Open Data are released
+under CC0; citation and acknowledgement of the ATLAS Collaboration are requested.
+Neither ATLAS nor CERN endorses this analysis.
 
-## 8. ¿Falta código?
-
-La cadena **descarga → selección → histogramas → comparación** está implementada
-y ejecutada. No falta un módulo para producir las figuras actuales.
-
-Sí falta desarrollo para conclusiones más exigentes: fondos no prompt/falsos,
-variaciones sistemáticas y validación más amplia de la selección. Los errores
-actuales son estadísticos. La comparación se realiza a nivel reconstruido;
-no se han corregido las distribuciones por los efectos de aceptación y resolución
-del detector.
-
-La región principal contiene 36 945 colisiones frente a 36 691,3 eventos MC
-esperados. La proximidad de los conteos totales no basta para establecer el
-acuerdo de las distribuciones angulares ni validar todos los fondos.
-SR2b está contenida en SR1b; no son muestras independientes.
-
-## Créditos y estado del proyecto
-
-Resultados preliminares para Laboratorio III. El código fue desarrollado con
-asistencia de IA; las pruebas automatizadas no sustituyen la revisión física
-del autor. Las limitaciones del análisis se indican arriba.
-
-Se agradece a ATLAS Collaboration la publicación de datos y ejemplos educativos.
-Los [créditos, DOI y condiciones de uso](licenses/DATA_SOURCES.md) identifican las
-fuentes exactas. El código adaptado se distribuye bajo EUPL-1.1; se conserva
-el aviso MIT del código previo en licenses/. Los datos tienen su licencia propia.
-No se incluyen ROOT, correos ni documentos personales.
+The preliminary implementation was developed with AI assistance and requires
+continued scientific review by the author. Software and data notices are listed
+in [licenses/](licenses/).
