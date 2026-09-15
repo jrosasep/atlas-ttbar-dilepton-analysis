@@ -1,9 +1,6 @@
 # ATLAS dilepton angular distributions
 ## Distribuciones angulares dileptónicas con ATLAS Open Data
 
-A personal particle-physics data analysis project developed for **Laboratorio III**.
-Proyecto personal de análisis de datos en física de partículas desarrollado para **Laboratorio III**.
-
 Start with the [pedagogical notebook / cuaderno pedagógico](notebooks/01_pregunta_y_proceso_fisico.ipynb).
 
 ## Scientific question / Pregunta científica
