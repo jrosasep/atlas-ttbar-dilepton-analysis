@@ -4,6 +4,8 @@
 A personal particle-physics data analysis project developed for **Laboratorio III**.
 Proyecto personal de análisis de datos en física de partículas desarrollado para **Laboratorio III**.
 
+Start with the [pedagogical notebook / cuaderno pedagógico](notebooks/01_pregunta_y_proceso_fisico.ipynb).
+
 ## Scientific question / Pregunta científica
 
 > To what extent are the observed Δφ(e,μ) and |Δη(e,μ)| distributions described
