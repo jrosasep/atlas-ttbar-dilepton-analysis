@@ -1,24 +1,8 @@
 # ATLAS dilepton angular distributions
 ## Distribuciones angulares dileptónicas con ATLAS Open Data
 
-Independent educational analysis developed for **Laboratorio III, Universidad de Concepción**.
-Análisis educativo independiente desarrollado para **Laboratorio III, Universidad de Concepción**.
-
-### Abstract
-
-This project compares the reconstructed electron-muon angular distributions in
-ATLAS collision data with a Standard Model Monte Carlo prediction. The selected
-sample is enriched in dileptonic top-antitop production. The observables are the
-azimuthal separation, Δφ(e,μ), and the absolute pseudorapidity separation,
-|Δη(e,μ)|.
-
-### Resumen
-
-Este proyecto compara las distribuciones angulares reconstruidas del electrón y
-del muón en colisiones registradas por ATLAS con una predicción Monte Carlo del
-Modelo Estándar. La muestra está enriquecida en producción dileptónica
-top-antitop. Los observables son la separación azimutal Δφ(e,μ) y la separación
-absoluta en pseudorrapidez |Δη(e,μ)|.
+A personal particle-physics data analysis project developed for **Laboratorio III**.
+Proyecto personal de análisis de datos en física de partículas desarrollado para **Laboratorio III**.
 
 ## Scientific question / Pregunta científica
 
@@ -28,41 +12,42 @@ absoluta en pseudorrapidez |Δη(e,μ)|.
 > ¿En qué medida las distribuciones observadas de Δφ(e,μ) y |Δη(e,μ)| son
 > descritas por la señal top-antitop simulada y los procesos de fondo disponibles?
 
-## Data and method / Datos y método
+![Reconstructed electron-muon angular distributions in the main selection](results/angulos_conteos_SR2b.png)
 
-| Component / Componente | Definition / Definición |
+*Collision data (black points) compared with the total Monte Carlo prediction.
+Datos de colisiones (puntos negros) comparados con la predicción Monte Carlo total.*
+
+## Data and analysis / Datos y análisis
+
+The input consists of ATLAS Open Data proton-proton collisions from 2015-2016 at
+√s = 13 TeV and the corresponding Monte Carlo samples. The educational
+`2J2LMET30` ROOT ntuples contain reconstructed leptons, jets and missing
+transverse momentum.
+
+La selección principal requiere un electrón y un muón aceptados con cargas
+opuestas y pT > 25 GeV, además de al menos dos jets aceptados y dos etiquetas b.
+La predicción suma la señal top-antitop y los fondos simulados disponibles.
+
+| Observables | Comparison / Comparación |
 |---|---|
-| Collision data / Datos | ATLAS proton-proton collisions, 2015-2016, √s = 13 TeV |
-| Simulation / Simulación | top-antitop, single-top, diboson, Z+jets, W+jets, ttV and H→WW |
-| Input format / Formato | Educational ROOT ntuples, `2J2LMET30` skim |
-| Main selection / Selección | One accepted electron and one accepted muon with opposite charge and pT > 25 GeV; at least two accepted jets and at least two b-tags |
-| Observables | Δφ(e,μ) and |Δη(e,μ)| |
-| Comparison / Comparación | Event yields, normalized shapes and data/MC ratios |
+| Δφ(e,μ) and absolute Δη(e,μ) | Event yields, normalized shapes and data/MC ratios |
 
-Monte Carlo events are weighted using the integrated luminosity, cross sections,
-generator weights and the available correction factors. The analysis is performed
-with reconstructed objects and reads the ROOT files in chunks.
+Monte Carlo events are weighted with the integrated luminosity, cross sections,
+generator weights and available correction factors.
 
 ## Preliminary result / Resultado preliminar
 
-For the main selection, the current analysis finds:
-
-| Collision data / Datos | Total MC / MC total | MC statistical uncertainty / Incertidumbre estadística MC | Predicted tt̄ fraction / Fracción tt̄ predicha |
+| Collision data / Datos | Total MC | MC statistical uncertainty | Predicted tt̄ fraction |
 |---:|---:|---:|---:|
 | 36,945 | 36,691.3 | 131.9 | 96.57% |
 
-These numbers describe the selected sample as modelled by the available
-simulations. They do not identify the physical origin of individual collision
-events. The principal angular plots are available in
-[results/](results/), together with the [method](results/METHOD.md) and
-[numerical summary](results/RESULTS.md).
-
-Estos valores describen la muestra según las simulaciones disponibles, pero no
-identifican el origen físico de cada colisión real.
+The 96.57% value is the predicted top-antitop fraction within the total MC, not
+a classification of individual collision events. Figures, numerical tables and
+the explanation of the calculation are available in [results/](results/).
 
 ## Reproduce / Reproducir
 
-Python 3.12 is recommended. From the repository root:
+With Python 3.12, from the repository root:
 
 ~~~text
 python -m pip install -r requirements-lock.txt
@@ -70,11 +55,9 @@ python run.py check
 python run.py plot
 ~~~
 
-These commands run tests that do not require local ROOT files and regenerate the
-figures from the stored numerical results.
-
-To download and process the complete input used here (63 files, approximately
-14.97 GB):
+These commands test the code and regenerate the figures from the stored results
+without downloading the ROOT files. To repeat the complete processing
+(63 files, approximately 14.97 GB):
 
 ~~~text
 python run.py download
@@ -82,48 +65,31 @@ python run.py check --with-data
 python run.py analyze
 ~~~
 
-## Repository structure / Estructura
+The processing chain is:
 
 ~~~text
-analysis/   event selection, weights, observables, tests and provenance
-results/    figures, tables and explanation of the method
-licenses/   software notices and data attribution
-run.py      single command-line entry point
+ROOT files → event selection → weights and observables
+           → histograms → data/MC comparison
 ~~~
 
-The processing sequence is:
+## Scope / Alcance
 
-~~~text
-ATLAS ROOT files → event selection → weights and observables
-                 → histograms → data/MC comparison
-~~~
+This is a reconstructed-level educational comparison. The current uncertainty
+bands are statistical. A complete evaluation of systematic uncertainties and
+non-prompt or misidentified-lepton backgrounds is pending, and no correction for
+detector acceptance and resolution has been applied.
 
-## Current scope / Alcance actual
+Es un análisis preliminar con objetos reconstruidos. Sus resultados no deben
+interpretarse como una medición de precisión ni como un resultado oficial de ATLAS.
 
-The current uncertainty bands are statistical. A complete treatment of
-systematic uncertainties and non-prompt or misidentified-lepton backgrounds is
-still pending. The distributions have not been corrected for detector acceptance
-and resolution. Therefore, this is a reconstructed-level educational comparison,
-not a precision measurement.
+## Data and credit / Datos y créditos
 
-Las bandas actuales representan incertidumbres estadísticas. Todavía falta un
-tratamiento completo de las incertidumbres sistemáticas y de los fondos con
-leptones no prompt o mal identificados. Las distribuciones no han sido corregidas
-por aceptación y resolución del detector.
-
-## Data, references and credit / Datos, referencias y créditos
-
-- [ATLAS collision data, DOI 10.7483/OPENDATA.ATLAS.0CJR.N7ZT](https://doi.org/10.7483/OPENDATA.ATLAS.0CJR.N7ZT)
-- [ATLAS Monte Carlo simulation, DOI 10.7483/OPENDATA.ATLAS.NNF8.76IX](https://doi.org/10.7483/OPENDATA.ATLAS.NNF8.76IX)
+- [Collision data — DOI 10.7483/OPENDATA.ATLAS.0CJR.N7ZT](https://doi.org/10.7483/OPENDATA.ATLAS.0CJR.N7ZT)
+- [Monte Carlo simulation — DOI 10.7483/OPENDATA.ATLAS.NNF8.76IX](https://doi.org/10.7483/OPENDATA.ATLAS.NNF8.76IX)
 - [ATLAS Open Data documentation](https://opendata.atlas.cern/docs/data/for_education/13TeV25_details)
 - [Educational TTbarDilepAnalysis reference](https://github.com/atlas-outreach-data-tools/atlas-outreach-cpp-framework-13tev/tree/ff71d6ba82f2afd5a45d2e9b7f80bf915ceb1c84/Analysis/TTbarDilepAnalysis)
 
-The original ROOT files are hosted by CERN and are not duplicated in this
-repository. Their exact paths and checksums are recorded in
-[analysis/manifest.json](analysis/manifest.json). ATLAS Open Data are released
-under CC0; citation and acknowledgement of the ATLAS Collaboration are requested.
-Neither ATLAS nor CERN endorses this analysis.
-
-The preliminary implementation was developed with AI assistance and requires
-continued scientific review by the author. Software and data notices are listed
-in [licenses/](licenses/).
+The ROOT files remain hosted by CERN. Their paths and checksums are recorded in
+[analysis/manifest.json](analysis/manifest.json). Neither ATLAS nor CERN endorses
+this analysis. The preliminary implementation was developed with AI assistance
+and remains subject to the author's scientific review.
