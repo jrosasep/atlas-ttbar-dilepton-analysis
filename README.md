@@ -45,6 +45,9 @@ The 96.57% value is the predicted top-antitop fraction within the total MC, not
 a classification of individual collision events. Figures, numerical tables and
 the explanation of the calculation are available in [results/](results/).
 
+The current comparison includes statistical uncertainties only; further
+limitations are documented with the [method](results/METHOD.md).
+
 ## Reproduce / Reproducir
 
 With Python 3.12, from the repository root:
@@ -71,16 +74,6 @@ The processing chain is:
 ROOT files → event selection → weights and observables
            → histograms → data/MC comparison
 ~~~
-
-## Scope / Alcance
-
-This is a reconstructed-level educational comparison. The current uncertainty
-bands are statistical. A complete evaluation of systematic uncertainties and
-non-prompt or misidentified-lepton backgrounds is pending, and no correction for
-detector acceptance and resolution has been applied.
-
-Es un análisis preliminar con objetos reconstruidos. Sus resultados no deben
-interpretarse como una medición de precisión ni como un resultado oficial de ATLAS.
 
 ## Data and credit / Datos y créditos
 
