@@ -13,17 +13,6 @@ RECORRIDO DEL PROGRAMA
     observables: calcula las cantidades que llevaremos a los histogramas.
     histogram: acumula conteos, pesos y pesos al cuadrado.
 
-RELACIÓN CON LA PAUTA 3
-    Datos y procedencia: manifiesto, ramas y controles de entrada.
-    Selección: un electrón y un muón de cargas opuestas y jets con etiqueta b.
-    Cálculos: separaciones angulares, pesos, histogramas y covarianzas.
-
-Los criterios se apoyan en el ejemplo educativo TTbarDilepAnalysis de ATLAS.
-Esta implementación Python sigue su selección de referencia y añade controles
-y observables para el proyecto. No es una implementación oficial de ATLAS.
-
-Esta reescritura descompone las operaciones para estudiarlas. Conserva las
-funciones públicas, las condiciones de selección y las fórmulas anteriores.
 Los gráficos se construyen por separado, en plots_and_summary.py.
 """
 
