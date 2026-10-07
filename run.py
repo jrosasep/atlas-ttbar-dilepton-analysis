@@ -1,63 +1,89 @@
-"""Entrada única del proyecto. Ejecutar sin argumentos muestra los pasos.
+"""Elegir qué paso del proyecto ejecutar desde la carpeta principal.
 
-Este archivo organiza la ejecución; no cambia cortes, pesos ni resultados físicos.
-Los cinco módulos originales se conservan byte por byte para mantener trazabilidad.
+check: comprobar el código mediante ejemplos pequeños, sin descargar datos.
+plot: dibujar los histogramas ya guardados, verificando su procedencia.
+download: obtener los ROOT públicos; es una descarga grande y explícita.
+analyze: leer los ROOT locales, seleccionar eventos y crear nuevos resultados.
+
+Este archivo organiza los pasos; no define cortes ni ecuaciones físicas.
 """
-import argparse
-import os
-from pathlib import Path
-import shutil
-import subprocess
-import sys
+import argparse          # Leer la acción escrita después de run.py.
+import os                # Conservar la configuración del entorno de Python.
+from pathlib import Path # Construir rutas sin depender de dónde abrimos la terminal.
+import subprocess        # Ejecutar otro programa y esperar su terminación.
+import sys               # Usar el mismo intérprete de Python en todos los pasos.
 
-ROOT = Path(__file__).resolve().parent
+# __file__ es el nombre de este programa. resolve obtiene la ruta completa;
+# parent obtiene su carpeta. El símbolo / une una carpeta con un nombre.
+ruta_del_programa = Path(__file__)
+ruta_completa_del_programa = ruta_del_programa.resolve()
+ROOT = ruta_completa_del_programa.parent
 CODE = ROOT / 'analysis'
 
 
 def execute(*args):
-    """Usa el mismo Python, detiene el proceso ante errores y evita cachés locales."""
-    env = dict(os.environ, PYTHONDONTWRITEBYTECODE='1')
-    subprocess.run([sys.executable, '-B', *args], cwd=CODE, env=env, check=True)
+    """Ejecutar un paso; un error detiene la secuencia, no se oculta.
 
-
-def export_results():
-    """Tras dibujar, mueve las salidas para lectura a results/, sin duplicarlas."""
-    destination = ROOT / 'results'
-    destination.mkdir(exist_ok=True)
-    for path in (CODE / 'figures/angular_v2').iterdir():
-        if path.suffix in ('.png', '.pdf'):
-            shutil.move(str(path), str(destination / path.name))
-    for name in ('cutflow.csv', 'histograms.csv'):
-        shutil.move(str(CODE / 'results/angular_v2' / name), str(destination / name))
-    (CODE / 'figures/angular_v2').rmdir()
-    (CODE / 'figures').rmdir()
+    *args reúne los argumentos recibidos. No significa multiplicación aquí.
+    cwd fija la carpeta de ejecución para encontrar los otros programas.
+    check=True exige que el programa termine sin errores.
+    """
+    entorno = dict(os.environ)
+    entorno['PYTHONDONTWRITEBYTECODE'] = '1'
+    comando = [sys.executable, '-B']
+    comando.extend(args)
+    subprocess.run(comando, cwd=CODE, env=entorno, check=True)
 
 
 def main():
+    """Relacionar la acción solicitada con el programa correspondiente."""
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('step', nargs='?', choices=('check', 'plot', 'download', 'analyze'))
-    parser.add_argument('--with-data', action='store_true', help='Incluye pruebas que requieren ROOT locales')
+    parser.add_argument(
+        'step', nargs='?', choices=('check', 'plot', 'download', 'analyze')
+    )
+    parser.add_argument(
+        '--with-data', action='store_true',
+        help='Añadir las pruebas de integración que requieren ROOT locales'
+    )
     args = parser.parse_args()
+
     if args.step is None:
         parser.print_help()
-        print('\nEmpieza: python run.py check\nDespués: python run.py plot\n'
-              'Solo para reprocesar eventos: download (14,97 GB) y luego analyze.')
+        print('\nPrimero: python run.py check')
+        print('Para ver los resultados guardados: python run.py plot')
+        print('Para una nueva corrida: ROOT en analysis/data/ y python run.py analyze')
+        print('download sólo es necesario si no tiene los ROOT; no se inicia solo.')
+
     elif args.step == 'check':
-        selection = [] if args.with_data else ['-m', 'not integration']
-        execute('-m', 'pytest', '-p', 'no:cacheprovider', 'test_analysis.py', '-q', *selection)
+        # Las pruebas normales usan ejemplos construidos para comprobar cálculos.
+        # Las marcadas integration necesitan archivos reales en analysis/data/.
+        seleccion_de_pruebas = ['-m', 'not integration']
+        if args.with_data:
+            seleccion_de_pruebas = []
+        execute(
+            '-m', 'pytest', '-p', 'no:cacheprovider', 'test_analysis.py', '-q',
+            *seleccion_de_pruebas
+        )
+
     elif args.step == 'plot':
-        execute('plots_and_summary.py')
-        export_results()
-        print('Figuras y tablas actualizadas en results/. Sin descargar datos.')
+        # Los JSON guardados conservan la huella del código que los produjo.
+        # Este modo permite redibujarlos tras comprobar las fuentes registradas;
+        # no vuelve a procesar ROOT ni cambia su selección original.
+        execute('plots_and_summary.py', '--stored-run')
+        print('Figuras, tablas y procedencia del redibujo en results/.')
+
     elif args.step == 'download':
-        print('Descarga explícita: 63 archivos, aproximadamente 14,97 GB.', flush=True)
+        print('Descarga explícita: 63 archivos, aproximadamente 15 GB.', flush=True)
         execute('fetch_inputs.py', 'download')
+
     elif args.step == 'analyze':
-        if not (CODE / 'data').is_dir():
-            parser.error('Faltan los ROOT en analysis/data/. Consulta README.md antes de descargar.')
+        carpeta_datos = CODE / 'data'
+        if not carpeta_datos.is_dir():
+            parser.error('Faltan los ROOT en analysis/data/. Consulte README.md.')
         execute('analysis.py')
+        # Para resultados nuevos se exige coincidencia con el código actual.
+        # Si el análisis falla, execute impide dibujar como si hubiese terminado.
         execute('plots_and_summary.py')
-        export_results()
 
 
 if __name__ == '__main__':
